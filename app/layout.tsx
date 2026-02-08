@@ -47,7 +47,7 @@ export const metadata: Metadata = {
       "Professional accounting services for Lagos businesses and startups. 25 years experience.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/accountant-og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Praestantia Consulting - Professional Accounting Services",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     title: "Chartered Accountant in Lagos | Praestantia Consulting",
     description:
       "Professional accounting services for Lagos businesses and startups.",
-    images: ["/og-image.jpg"],
+    images: ["/accountant-og-image.jpg"],
   },
   robots: {
     index: true,
@@ -81,7 +81,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${dmSans.variable}`}>
-      <body className="font-sans antialiased min-h-screen flex flex-col">
+      <body className="antialiased">
+
   <Header />
   <main className="flex-1">{children}</main>
   <Footer />
