@@ -16,7 +16,7 @@ const heroHeaderIn = {
 
 export default function Hero() {
   return (
-    <section className="relative text-center h-screen flex flex-col justify-center overflow-hidden">
+    <section className="relative text-center overflow-hidden">
       <div className="absolute inset-0 -z-10">
         <Image
           src="/accountant-image.jpg"
@@ -27,9 +27,8 @@ export default function Hero() {
         />
       </div>
 
-      <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-purple-200 rounded-full blur-3xl opacity-50 z-10"></div>
-
-      <div className="relative z-20 mx-auto w-full">
+    
+      <div className="relative z-20 mx-auto  h-screen flex flex-col justify-center w-full">
         <Container>
           <div className="flex flex-col space-y-4">
             <motion.div variants={heroHeaderIn} initial="hidden" animate="show">
