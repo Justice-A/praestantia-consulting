@@ -19,7 +19,7 @@ export default function Hero() {
     <section className="relative text-center overflow-hidden">
       <div className="absolute inset-0 -z-10">
         <Image
-          src="/accountant-image.jpg"
+          src="/about-us.jpg"
           alt="Hero image of an accountant working at a desk with financial documents and a laptop"
           fill
           className="object-cover brightness-[0.2]"
