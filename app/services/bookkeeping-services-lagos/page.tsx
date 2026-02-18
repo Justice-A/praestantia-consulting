@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { CheckCircle, ArrowRight, BookOpen, Clock, Shield, TrendingUp, FileCheck, Calendar } from "lucide-react";
+import Image from "next/image";
+import CTA from "@/components/home/CTA";
 
 export const metadata = {
   title: "Bookkeeping & Compliance Services for Nigerian Businesses",
@@ -131,9 +133,18 @@ export default function BookkeepingPage() {
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-orange-50 to-white py-20 lg:py-28">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+
+      <section className="relative py-20 lg:py-32 overflow-hidden">
+          <div className="absolute inset-0 -z-10">
+            <Image
+              src="/happy-customers.jpg" 
+              alt="Success stories background"
+              fill
+              className="object-cover brightness-[0.1]" 
+              priority
+            />
+          </div>
+         <div className="max-w-7xl mx-auto px-6 lg:px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Text Content */}
             <div>
@@ -144,20 +155,15 @@ export default function BookkeepingPage() {
                 <ArrowRight className="w-4 h-4 rotate-180" />
                 Back to Services
               </Link>
-
-              <div className="inline-block px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-sm font-semibold mb-6">
-                Bookkeeping Services
-              </div>
-
-              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              <h1 className="text-4xl lg:text-4xl font-bold text-white mb-6">
                 Professional Bookkeeping for Nigerian Businesses
               </h1>
 
-              <p className="text-xl text-gray-600 mb-4 leading-relaxed">
+              <p className="text-xl text-white mb-4 leading-relaxed">
                 Monthly bookkeeping and financial reporting that keeps your business organized and tax-ready.
               </p>
 
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              <p className="text-lg text-white mb-8 leading-relaxed">
                 Based in Lagos, serving SMEs and startups across Nigeria with reliable bookkeeping you can count on.
               </p>
 
@@ -180,15 +186,15 @@ export default function BookkeepingPage() {
 
             {/* Visual */}
             <div className="relative">
-              <div className="bg-orange-100 rounded-2xl p-12 text-center">
-                <BookOpen className="w-32 h-32 text-orange-600 mx-auto mb-6" />
+              <div className="bg-purple-100 rounded-2xl p-12 text-center">
+                <BookOpen className="w-32 h-32 text-purple-600 mx-auto mb-6" />
                 <div className="space-y-4">
                   <div className="bg-white rounded-lg p-4 shadow-lg">
-                    <div className="text-3xl font-bold text-orange-600">10th</div>
+                    <div className="text-3xl font-bold text-purple-600">10th</div>
                     <div className="text-sm text-gray-600">Monthly Reports Delivered</div>
                   </div>
                   <div className="bg-white rounded-lg p-4 shadow-lg">
-                    <div className="text-3xl font-bold text-green-600">100%</div>
+                    <div className="text-3xl font-bold text-purple-600">100%</div>
                     <div className="text-sm text-gray-600">Accurate Records</div>
                   </div>
                 </div>
@@ -202,7 +208,7 @@ export default function BookkeepingPage() {
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-4">
               What Makes Our Bookkeeping Different
             </h2>
             <p className="text-lg text-gray-600">
@@ -215,8 +221,8 @@ export default function BookkeepingPage() {
               const Icon = feature.icon;
               return (
                 <div key={index} className="text-center">
-                  <div className="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                    <Icon className="w-8 h-8 text-orange-600" />
+                  <div className="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <Icon className="w-8 h-8 text-purple-600" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">
                     {feature.title}
@@ -236,7 +242,7 @@ export default function BookkeepingPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-8">
+              <h2 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-8">
                 What's Included Monthly
               </h2>
               <p className="text-lg text-gray-600 mb-8">
@@ -262,7 +268,7 @@ export default function BookkeepingPage() {
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-4">
               Perfect For
             </h2>
             <p className="text-lg text-gray-600">
@@ -275,8 +281,8 @@ export default function BookkeepingPage() {
               const Icon = item.icon;
               return (
                 <div key={index} className="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow">
-                  <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
-                    <Icon className="w-6 h-6 text-orange-600" />
+                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                    <Icon className="w-6 h-6 text-purple-600" />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">
                     {item.title}
@@ -295,7 +301,7 @@ export default function BookkeepingPage() {
       <section className="bg-gray-50 py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-4">
               Simple, Transparent Pricing
             </h2>
             <p className="text-lg text-gray-600">
@@ -360,62 +366,11 @@ export default function BookkeepingPage() {
         </div>
       </section>
 
-      {/* The Cost of NOT Having Good Books */}
-      <section className="bg-orange-600 py-24 text-white">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-              The True Cost of Bad Bookkeeping
-            </h2>
-            <p className="text-xl text-orange-100">
-              What messy books actually cost Nigerian businesses
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-              <h3 className="font-bold text-xl mb-2">❌ Tax Penalties</h3>
-              <p className="text-orange-100">
-                Late or incorrect filings = ₦50,000 - ₦500,000+ in penalties annually
-              </p>
-            </div>
-
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-              <h3 className="font-bold text-xl mb-2">❌ Lost Time</h3>
-              <p className="text-orange-100">
-                Founders spending 10+ hours/month on books instead of growing the business
-              </p>
-            </div>
-
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-              <h3 className="font-bold text-xl mb-2">❌ Bad Decisions</h3>
-              <p className="text-orange-100">
-                Can't tell what's profitable. Flying blind on pricing, hiring, and investment
-              </p>
-            </div>
-
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-              <h3 className="font-bold text-xl mb-2">❌ Missed Opportunities</h3>
-              <p className="text-orange-100">
-                Investors won't touch you without clean books. Loans get rejected.
-              </p>
-            </div>
-          </div>
-
-          <div className="text-center mt-8">
-            <p className="text-xl font-semibold">
-              Professional bookkeeping costs ₦40,000 - ₦150,000/month.<br />
-              Bad bookkeeping costs your business much more.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* FAQ */}
       <section className="bg-white py-24">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-4">
               Common Questions
             </h2>
           </div>
@@ -435,24 +390,7 @@ export default function BookkeepingPage() {
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="bg-gray-50 py-24">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Ready to Get Your Books in Order?
-          </h2>
-          <p className="text-xl text-gray-600 mb-8">
-            Schedule a free consultation to discuss your bookkeeping needs. We'll review your current situation and recommend the best solution.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 bg-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-lg"
-          >
-            Schedule Free Consultation
-            <ArrowRight className="w-5 h-5" />
-          </Link>
-        </div>
-      </section>
+      <CTA/>
     </>
   );
 }

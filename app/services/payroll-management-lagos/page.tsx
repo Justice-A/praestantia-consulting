@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { CheckCircle, ArrowRight, Users, Clock, Shield, TrendingUp } from "lucide-react";
+import Hero from "@/components/home/Hero";
 
 export const metadata = {
   title: "Payroll Management Services in Lagos | NTA 2025 Compliant",
@@ -52,10 +53,7 @@ export default function PayrollManagementPage() {
       title: "Growing Startups",
       description: "Scale your payroll as you hire, without administrative headaches",
     },
-    {
-      title: "Manufacturing Companies",
-      description: "Complex shift patterns and allowances handled accurately",
-    },
+    
     {
       title: "Service Businesses",
       description: "Commission-based pay, bonuses, and variable compensation managed seamlessly",
@@ -83,7 +81,7 @@ export default function PayrollManagementPage() {
 
   return (
     <>
-      {/* Hero Section */}
+   
       <section className="bg-linear-to-br from-blue-50 to-white py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -96,11 +94,6 @@ export default function PayrollManagementPage() {
                 <ArrowRight className="w-4 h-4 rotate-180" />
                 Back to Services
               </Link>
-
-              <div className="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-6">
-                Payroll Services
-              </div>
-
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                 NTA 2025 Compliant Payroll Management for Lagos Businesses
               </h1>
@@ -114,7 +107,7 @@ export default function PayrollManagementPage() {
                   href="/contact"
                   className="inline-flex items-center gap-2 bg-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-lg"
                 >
-                  Get Free Consultation
+                  View services
                   <ArrowRight className="w-5 h-5" />
                 </Link>
                 <a
@@ -150,7 +143,7 @@ export default function PayrollManagementPage() {
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-4">
               Why Our Payroll Service Stands Out
             </h2>
             <p className="text-lg text-gray-600">
@@ -184,7 +177,7 @@ export default function PayrollManagementPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-8">
+              <h2 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-8">
                 What's Included in Our Payroll Service
               </h2>
               <p className="text-lg text-gray-600 mb-8">
@@ -229,7 +222,7 @@ export default function PayrollManagementPage() {
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-4">
               Who This Service Is For
             </h2>
             <p className="text-lg text-gray-600">
@@ -256,7 +249,7 @@ export default function PayrollManagementPage() {
       <section className="bg-gray-50 py-24">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-4">
               Frequently Asked Questions
             </h2>
           </div>
@@ -273,28 +266,6 @@ export default function PayrollManagementPage() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Pricing Guidance */}
-      <section className="bg-white py-24">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Investment & Pricing
-          </h2>
-          <p className="text-xl text-gray-600 mb-8">
-            Pricing varies based on company size, complexity, and level of support needed. Most SMEs invest between ₦80,000 - ₦200,000 for initial setup, with monthly support starting from ₦50,000.
-          </p>
-          <p className="text-lg text-gray-600 mb-8">
-            We offer a <strong className="text-purple-600">free consultation</strong> to assess your needs and provide transparent, no-obligation pricing.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 bg-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-lg"
-          >
-            Get Custom Quote
-            <ArrowRight className="w-5 h-5" />
-          </Link>
         </div>
       </section>
     </>

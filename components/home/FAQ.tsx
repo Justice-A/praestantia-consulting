@@ -3,13 +3,32 @@
 import { useState } from "react";
 import { Plus, Minus } from "lucide-react";
 import Link from "next/link";
+import { motion, easeIn } from "framer-motion";
+
+const subtleHeaderIn = {
+  hidden: { opacity: 0, y: 12 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.8, ease: easeIn },
+  },
+};
+
+const fadeIn = {
+  hidden: { opacity: 0, y: 16 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: easeIn },
+  },
+};
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const faqs = [
     {
-      question: "How much does a chartered accountant cost in Lagos?",
+      question: "How much does a chartered accountant cost in Nigeria?",
       answer: "Accounting fees vary based on your business size and needs. For SMEs, monthly bookkeeping typically starts from ₦50,000, while one-time projects like annual returns or payroll setup are quoted individually. We offer a free consultation to assess your needs and provide transparent pricing with no hidden fees."
     },
     {
@@ -30,7 +49,7 @@ export default function FAQ() {
     },
     {
       question: "Do you work with businesses outside Lagos?",
-      answer: "Yes! While our main office is in Lekki, Lagos, we provide remote accounting services to businesses across Nigeria and internationally. We use secure cloud-based systems and video conferencing to collaborate with clients anywhere in the world. Distance is no barrier to quality service."
+      answer: "Yes! We provide remote accounting services to businesses across Nigeria and internationally. We use secure cloud-based systems and conferencing to collaborate with clients anywhere in the world. Distance is no barrier to quality service."
     },
     {
       question: "What's the difference between a bookkeeper and an accountant?",
@@ -47,26 +66,39 @@ export default function FAQ() {
   };
 
   return (
-    <section className="bg-white py-24 h-screen">
+    <section className="bg-white py-24">
       <div className=" mx-auto px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
-          <p className="text-4xl lg:text-4xl font-bold text-gray-900 mb-4">
+        <motion.div
+          className="text-center mb-16"
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          variants={subtleHeaderIn}
+        >
+          <h2 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-4">
             Frequently Asked Questions
-          </p>
+          </h2>
           <p className="text-2xl text-gray-600">
             Quick answers to common questions about our accounting services
           </p>
-        </div>
+        </motion.div>
 
         {/* FAQ Accordion */}
-        <div className="space-y-4">
+        <motion.div
+          className="space-y-4"
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ staggerChildren: 0.1 }}
+        >
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
 
             return (
-              <div
+              <motion.div
                 key={index}
+                variants={fadeIn}
                 className="bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-purple-200 transition-colors "
               >
                 {/* Question Button */}
@@ -98,24 +130,10 @@ export default function FAQ() {
                     </p>
                   </div>
                 )}
-              </div>
+              </motion.div>
             );
           })}
-        </div>
-
-        {/* CTA to Full FAQ Page */}
-        <div className="text-center mt-12">
-          <p className="text-gray-600 mb-4">Still have questions?</p>
-          <Link
-            href="/faq"
-            className="inline-flex items-center gap-2 text-purple-600 font-semibold hover:text-purple-700 transition-colors"
-          >
-            View All FAQs
-            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </Link>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

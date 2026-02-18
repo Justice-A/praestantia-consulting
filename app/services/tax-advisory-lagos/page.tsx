@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { CheckCircle, ArrowRight, FileText, Clock, Shield, TrendingUp, Calculator, Users } from "lucide-react";
+import Hero from "@/components/home/Hero";
 
 export const metadata = {
   title: "Tax Advisory & Filing Services in Nigeria | VAT, Income Tax, Annual Returns",
@@ -110,8 +111,8 @@ export default function TaxAdvisoryPage() {
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-purple-50 to-white py-20 lg:py-28">
+
+      <section className="bg-linear-to-br from-purple-50 to-white py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Text Content */}
@@ -124,13 +125,9 @@ export default function TaxAdvisoryPage() {
                 Back to Services
               </Link>
 
-              <div className="inline-block px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold mb-6">
-                Tax Services
-              </div>
-
-              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              <h2 className="text-4xl lg:text-44xl font-bold text-gray-900 mb-6">
                 Expert Tax Advisory & Filing for Nigerian Businesses
-              </h1>
+              </h2>
 
               <p className="text-xl text-gray-600 mb-4 leading-relaxed">
                 Strategic tax planning and filing services for businesses and individuals across Nigeria. Based in Lagos, serving clients nationwide.
@@ -181,7 +178,7 @@ export default function TaxAdvisoryPage() {
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Comprehensive Tax Services
             </h2>
             <p className="text-lg text-gray-600">
@@ -214,7 +211,7 @@ export default function TaxAdvisoryPage() {
       <section className="bg-gray-50 py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-4">
               What We Cover
             </h2>
             <p className="text-lg text-gray-600">
@@ -246,7 +243,7 @@ export default function TaxAdvisoryPage() {
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-4">
               Who We Serve
             </h2>
             <p className="text-lg text-gray-600">
@@ -270,27 +267,23 @@ export default function TaxAdvisoryPage() {
       </section>
 
       {/* Success Story */}
-      <section className="bg-purple-600 py-24 text-white">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-              Recent Success Story
-            </h2>
-          </div>
-
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 lg:p-12">
-            <div className="space-y-4">
-              <p className="text-lg">
-                <strong className="text-purple-200">Client:</strong> Tech startup with 3 years of unfiled VAT returns
+          <div className="text-center mb-12 max-w-4xl mx-auto">
+               <div className="bg-white rounded-2xl p-8 shadow-xl">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                Recent Success Story
+              </h3>
+              <div className="space-y-4 text-gray-700">
+                <p className="text-lg">
+                <strong className="text-stone-900">Client:</strong> Tech startup with 3 years of unfiled VAT returns
               </p>
               <p className="text-lg">
-                <strong className="text-purple-200">Challenge:</strong> ₦2.5M in potential penalties, fear of business closure
+                <strong className="text-stone-900">Challenge:</strong> ₦2.5M in potential penalties, fear of business closure
               </p>
               <p className="text-lg">
-                <strong className="text-purple-200">Our Solution:</strong> Voluntary disclosure program, proper documentation, penalty negotiation
+                <strong className="text-stone-900">Our Solution:</strong> Voluntary disclosure program, proper documentation, penalty negotiation
               </p>
               <p className="text-lg">
-                <strong className="text-purple-200">Results:</strong>
+                <strong className="text-stone-900">Results:</strong>
               </p>
               <ul className="space-y-2 pl-4 text-lg">
                 <li>• All returns filed and accepted by FIRS</li>
@@ -298,16 +291,15 @@ export default function TaxAdvisoryPage() {
                 <li>• Payment plan established over 12 months</li>
                 <li>• Business continued operations without disruption</li>
               </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
 
       {/* FAQ */}
       <section className="bg-gray-50 py-24">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-4">
               Common Tax Questions
             </h2>
           </div>
@@ -330,7 +322,7 @@ export default function TaxAdvisoryPage() {
       {/* Pricing */}
       <section className="bg-white py-24">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-6">
             Investment & Pricing
           </h2>
           <p className="text-xl text-gray-600 mb-8">

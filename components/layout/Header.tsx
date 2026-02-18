@@ -16,8 +16,8 @@ export default function Header() {
   ];
 
   return (
-    <nav className=" border-b border-gray-200 sticky top-0 z-50 backdrop-blur-sm bg-white/95 shadow-sm">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-4">
+    <nav className="border-b border-gray-200 sticky top-0 z-50 backdrop-blur-sm bg-white/95 shadow-sm">
+      <div className="mx-auto px-6 lg:px-8 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
@@ -26,31 +26,43 @@ export default function Header() {
             </div>
             <div>
               <div className="font-semibold text-lg text-gray-900">Praestantia</div>
-              <div className="text-xs text-gray-600">Chartered Accountants</div>
+              <div className="text-xs text-gray-600">Consulting limited</div>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex gap-8 items-center">
+            <Link href="/" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">
+              Home
+            </Link>
+            
+            <Link href="/about" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">
+              About
+            </Link>
             {/* Services Dropdown */}
             <div 
               className="relative"
               onMouseEnter={() => setServicesDropdownOpen(true)}
               onMouseLeave={() => setServicesDropdownOpen(false)}
             >
-              <button className="flex items-center gap-1 text-gray-700 hover:text-purple-600 transition-colors font-medium">
+              <div className="flex items-center gap-1 text-gray-700  font-medium hover:text-purple-600 transition-colors">
+                 <Link
+                      href="/services"
+                     
+                    >
                 Services
+                </Link>
                 <ChevronDown className={`w-4 h-4 transition-transform ${servicesDropdownOpen ? 'rotate-180' : ''}`} />
-              </button>
+              </div>
 
               {/* Dropdown Menu */}
               {servicesDropdownOpen && (
-                <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-200 py-2 animate-fade-in-up">
+                <div className="absolute top-full left-0 mt-1 w-64 bg-white rounded-lg shadow-xl border border-gray-200 py-2 space-y-2 animate-fade-in-up">
                   {services.map((service, index) => (
                     <Link
                       key={index}
                       href={service.href}
-                      className="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600 transition-colors"
+                      className="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600 transition-colors font-medium"
                     >
                       {service.name}
                     </Link>
@@ -66,14 +78,10 @@ export default function Header() {
                 </div>
               )}
             </div>
-
-            <Link href="/about" className="text-gray-700 hover:text-purple-600 transition-colors ">
-              About
-            </Link>
-            <Link href="/case-studies" className="text-gray-700 hover:text-purple-600 transition-colors ">
+            <Link href="/case-studies" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">
               Case studies
             </Link>
-            <Link href="/contact" className="text-gray-700 hover:text-purple-600 transition-colors ">
+            <Link href="/contact" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">
               Contact us
             </Link>
 
@@ -81,7 +89,7 @@ export default function Header() {
 
             <Link 
               href="/contact" 
-              className="bg-purple-600 text-white px-6 py-2.5 rounded-lg hover:bg-purple-700 transition-all shadow-lg shadow-purple-600/30 hover:shadow-xl hover:shadow-purple-600/40"
+              className="bg-purple-600 text-white px-6 py-2.5 rounded-lg hover:bg-purple-700 transition-all"
             >
               Get started
             </Link>
@@ -106,6 +114,14 @@ export default function Header() {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden pt-4 pb-2 space-y-2 border-t border-gray-200 mt-4">
+            <Link
+              href="/"
+              className="block py-2 text-gray-700 hover:text-purple-600 font-medium"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Home
+            </Link>
+
             {/* Services - Accordion style on mobile */}
             <div>
               <button

@@ -2,6 +2,25 @@
 
 import Link from "next/link";
 import { ArrowRight, Users, FileText, Settings, BookOpen } from "lucide-react";
+import { motion, easeIn } from "framer-motion";
+
+const subtleHeaderIn = {
+  hidden: { opacity: 0, y: 12 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.8, ease: easeIn },
+  },
+};
+
+const fadeIn = {
+  hidden: { opacity: 0, y: 16 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: easeIn },
+  },
+};
 
 export default function Services() {
   const services = [
@@ -39,28 +58,40 @@ export default function Services() {
     <section className="bg-gray-50 py-24 ">
       <div className="mx-auto px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
-          <p className="text-4xl lg:text-4xl font-bold text-gray-900 mb-4">
+        <motion.div
+          className="text-center mb-16"
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          variants={subtleHeaderIn}
+        >
+          <h3 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-4">
             How We Help Lagos Businesses
-          </p>
+          </h3>
           <p className="text-lg text-gray-600 mx-auto">
             Comprehensive accounting services tailored for SMEs, startups, and individuals
           </p>
-        </div>
+        </motion.div>
 
         {/* Services Grid - 3 columns */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 p-10">
+        <motion.div
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 p-10"
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ staggerChildren: 0.1 }}
+        >
           {services.map((service, index) => {
             const Icon = service.icon;
 
             return (
-              <Link
-                key={index}
-                href={`/services/${service.slug}`}
-                className="group"
-              >
-    
-                <div className="bg-white rounded-2xl p-10 shadow-lg hover:shadow-2xl transition-all duration-300 min-h-105 flex flex-col">
+              <motion.div key={index} variants={fadeIn}>
+                <Link
+                  href={`/services/${service.slug}`}
+                  className="group"
+                >
+      
+                  <div className="bg-white rounded-2xl p-10 shadow-md hover:shadow-2xl transition-all duration-300 min-h-105 flex flex-col">
                   {/* Colored Icon */}
                   <div
                     className={`w-20 h-20 ${service.iconBg} rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300`}
@@ -85,9 +116,10 @@ export default function Services() {
                   </div>
                 </div>
               </Link>
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">

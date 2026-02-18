@@ -1,6 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import { CheckCircle, ArrowRight, TrendingUp, Clock, DollarSign, Users } from "lucide-react";
-
+import CTA from "@/components/home/CTA";
 export const metadata = {
   title: "Case Studies | Real Results from Praestantia Consulting",
   description: "See how we've helped Nigerian businesses with payroll systems, tax filing, accounting setup, and bookkeeping. Real stories, real results.",
@@ -9,7 +10,7 @@ export const metadata = {
 
 export default function CaseStudiesPage() {
   const caseStudies = [
-    {
+     {
       title: "NTA 2025 Compliant Payroll for Manufacturing Company",
       industry: "Manufacturing",
       location: "Lagos",
@@ -143,51 +144,41 @@ export default function CaseStudiesPage() {
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="bg-linear-to-br from-purple-600 via-purple-700 to-indigo-800 text-white py-20 lg:py-32 relative overflow-hidden">
-        {/* Decorative elements */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-300 rounded-full blur-3xl"></div>
-        </div>
-
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
-          <div className="text-center mb-16">
-            <div className="inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-semibold mb-6">
-              Real Businesses, Real Results
-            </div>
-
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-              How We've Helped Nigerian Businesses Succeed
-            </h1>
+     <section className="relative py-24 lg:py-36 overflow-hidden"> 
+          <div className="absolute inset-0 -z-10"> 
+            <Image src="/happy-customers.jpg" 
+            alt="Success stories background" 
+            fill className="object-cover brightness-[0.2]" 
+            priority /> 
+            </div> 
+          <div className="max-w-7xl mx-auto px-6 lg:px-8 relative text-white">
+          <div className="text-center ">
+            <h2 className="text-4xl lg:text-4xl font-bold mb-6">
+              How We've Helped <span className="text-purple-600">Nigerian Businesses</span> Succeed
+            </h2>
 
             <p className="text-xl text-purple-100 max-w-3xl mx-auto leading-relaxed">
               From startups to established SMEs, see the tangible impact of professional accounting services. These are real stories from real clients across Nigeria.
             </p>
           </div>
+            <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
+          <Link
+            href="/contact"
+            className="inline-flex items-center justify-center bg-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-md"
+          >
+            Get Started
+          </Link>
 
-          {/* Quick Stats */}
-          <div className="grid md:grid-cols-4 gap-8 text-center">
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-              <div className="text-4xl font-bold mb-2">100+</div>
-              <div className="text-purple-100">Businesses Served</div>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-              <div className="text-4xl font-bold mb-2">₦10M+</div>
-              <div className="text-purple-100">Saved in Penalties</div>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-              <div className="text-4xl font-bold mb-2">25</div>
-              <div className="text-purple-100">Years Experience</div>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-              <div className="text-4xl font-bold mb-2">100%</div>
-              <div className="text-purple-100">Client Satisfaction</div>
-            </div>
-          </div>
+          <Link
+            href="#services"
+            className="inline-flex items-center justify-center bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold border-2 border-purple-600 hover:bg-purple-50 transition-all"
+          >
+            Explore Services
+          </Link>
         </div>
-      </section>
-
+    
+        </div>
+          </section>
       {/* Case Studies */}
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -216,7 +207,7 @@ export default function CaseStudiesPage() {
                   <div className="grid lg:grid-cols-3 gap-8 mb-12">
                     <div>
                       <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                        <span className="text-2xl">⚠️</span> The Challenge
+                         The Challenge
                       </h3>
                       <p className="text-gray-700 leading-relaxed">
                         {study.challenge}
@@ -225,7 +216,7 @@ export default function CaseStudiesPage() {
 
                     <div>
                       <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                        <span className="text-2xl">💡</span> Our Solution
+                        Our Solution
                       </h3>
                       <p className="text-gray-700 leading-relaxed">
                         {study.solution}
@@ -234,7 +225,7 @@ export default function CaseStudiesPage() {
 
                     <div>
                       <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                        <span className="text-2xl">✅</span> The Results
+                       The Results
                       </h3>
                       <ul className="space-y-2">
                         {study.results.map((result, resultIndex) => (
@@ -273,37 +264,11 @@ export default function CaseStudiesPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-purple-600 py-24 text-white">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Ready to Write Your Success Story?
-          </h2>
-          <p className="text-xl text-purple-100 mb-8">
-            Whether you need payroll systems, tax compliance, accounting setup, or bookkeeping—we've done it before, and we can do it for you.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all shadow-lg"
-            >
-              Schedule Free Consultation
-              <ArrowRight className="w-5 h-5" />
-            </Link>
-            <Link
-              href="/services"
-              className="inline-flex items-center justify-center gap-2 bg-purple-700 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-800 transition-all border-2 border-white/20"
-            >
-              View Our Services
-            </Link>
-          </div>
-        </div>
-      </section>
 
       {/* Why These Results Matter */}
       <section className="bg-white py-24">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-8 text-center">
+          <h2 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-8 text-center">
             What Makes These Results Possible?
           </h2>
 
@@ -337,6 +302,7 @@ export default function CaseStudiesPage() {
             </div>
           </div>
         </div>
+        <CTA/>
       </section>
     </>
   );

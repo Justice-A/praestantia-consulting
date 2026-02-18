@@ -1,15 +1,28 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import Container from "../ui/Container";
+import { motion, easeIn } from "framer-motion";
+
+const heroHeaderIn = {
+  hidden: { opacity: 0, y: 20 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 1, ease: easeIn },
+  },
+};
+
 export default function Hero() {
   return (
-    <section className="relative bg-white text-center h-screen flex flex-col justify-center overflow-hidden">
+    <section className="relative bg-white text-center h-screen flex flex-col justify-center overflow-hidden' : 'relative bg-white text-center h-screen flex flex-col justify-center overflow-hidden">
       <div className="absolute inset-0 z-0 w-full h-full overflow-hidden">
         <Image
           src="/accountant-image.jpg"
           alt="Toyin Aregbesola - Fellow Chartered Accountant"
           fill
-          className="object-cover brightness-[1]"
+          className="object-cover brightness-[0.2]"
           priority
         />
       </div>
@@ -19,26 +32,27 @@ export default function Hero() {
       <div className="relative z-20 mx-auto w-full">
         <Container>
           <div className="flex flex-col space-y-4">
-            <div>
-              <p className="text-5xl font-bold tracking-tight text-black">
-                Professional <span className="text-purple-600">Accounting Services</span> for Lagos Businesses
+            <motion.div variants={heroHeaderIn} initial="hidden" animate="show">
+              <h1 className="text-5xl font-bold tracking-tight text-stone-50">
+                Professional <span className="text-purple-600">Accounting Services</span> for Nigerian Businesses
+              </h1>
+            </motion.div>
+            <motion.div variants={heroHeaderIn} initial="hidden" animate="show" transition={{ delay: 0.2 }}>
+              <p className="mt-6 text-2xl text-stone-50 leading-relaxed max-w-6xl mx-auto">
+               Helping SMEs and startups stay tax-compliant, financially organized, and growth-ready.
               </p>
-            </div>
-            <div>
-              <p className="mt-6 text-2xl text-gray-900 leading-relaxed">
-                Chartered accountant with 25 years of experience helping SMEs and
-                startups stay tax-compliant, financially organized, and growth-ready.
-              </p>
-            </div>
+            </motion.div>
+             <motion.div variants={heroHeaderIn} initial="hidden" animate="show" transition={{ delay: 0.4 }}>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
               <Link href="/services" className="rounded-md bg-purple-600 px-8 py-4 text-sm font-semibold text-white shadow-sm hover:bg-purple-500 transition-colors">
                 View services
               </Link>
               <Link href="/contact"
-                className="rounded-md border border-purple-600 px-8 py-4 text-sm font-semibold text-purple-600 hover:bg-purple-50 transition-colors">
+                className="rounded-md border border-purple-600 bg-white px-8 py-4 text-sm font-semibold text-purple-600 hover:bg-purple-100 transition-colors">
                 Get started
               </Link>
             </div>
+            </motion.div>
           </div>
         </Container>
       </div>
