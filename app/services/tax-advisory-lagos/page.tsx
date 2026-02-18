@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { CheckCircle, ArrowRight, FileText, Clock, Shield, TrendingUp, Calculator, Users } from "lucide-react";
-import Hero from "@/components/home/Hero";
+import Hero from "@/app/Hero";
 
 export const metadata = {
   title: "Tax Advisory & Filing Services in Nigeria | VAT, Income Tax, Annual Returns",

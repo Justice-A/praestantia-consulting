@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Award, Users, TrendingUp, CheckCircle, Briefcase, GraduationCap } from "lucide-react";
-import Hero from "@/components/home/Hero";
+import Hero from "@/app/Hero";
 import CTA from "@/components/home/CTA";
 
 export default function AboutPage() {

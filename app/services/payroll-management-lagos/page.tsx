@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { CheckCircle, ArrowRight, Users, Clock, Shield, TrendingUp } from "lucide-react";
-import Hero from "@/components/home/Hero";
+import Hero from "@/app/Hero";
 
 export const metadata = {
   title: "Payroll Management Services in Lagos | NTA 2025 Compliant",

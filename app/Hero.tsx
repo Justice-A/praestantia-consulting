@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import Container from "../ui/Container";
+import Container from "../components/ui/Container";
 import { motion, easeIn } from "framer-motion";
 
 const heroHeaderIn = {

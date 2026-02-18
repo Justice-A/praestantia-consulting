@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { CheckCircle, ArrowRight, Settings, Clock, Shield, TrendingUp, Layers, BookOpen } from "lucide-react";
-import Hero from "@/components/home/Hero";
+import Hero from "@/app/Hero";
 
 export const metadata = {
   title: "Accounting System Design & Setup for Nigerian Startups & SMEs",
