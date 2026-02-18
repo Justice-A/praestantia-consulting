@@ -95,8 +95,8 @@ export default function ContactPage() {
       answer: "For urgent tax deadlines or time-sensitive issues, contact us via WhatsApp or phone. We prioritize urgent requests and can often accommodate same-day or next-day consultations depending on availability.",
     },
       {
-      question: "How quickly can you respond to urgent requests?",
-      answer: "For urgent tax deadlines or time-sensitive issues, contact us via WhatsApp or phone. We prioritize urgent requests and can often accommodate same-day or next-day consultations depending on availability.",
+      question: "How often can we communicate?",
+      answer: "We maintain regular communication with our clients through scheduled meetings, email updates, and WhatsApp support. You can expect updates on your financial status at least once a month.",
     },
 
 
