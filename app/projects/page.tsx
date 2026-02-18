@@ -3,9 +3,9 @@ import Link from "next/link";
 import { CheckCircle, ArrowRight, TrendingUp, Clock, DollarSign, Users } from "lucide-react";
 import CTA from "@/components/home/CTA";
 export const metadata = {
-  title: "Case Studies | Real Results from Praestantia Consulting",
+  title: "Projects | Real Results from Praestantia Consulting",
   description: "See how we've helped Nigerian businesses with payroll systems, tax filing, accounting setup, and bookkeeping. Real stories, real results.",
-  keywords: "accounting case studies Nigeria, tax success stories Lagos, payroll implementation Nigeria, accounting testimonials",
+  keywords: "accounting projects Nigeria, tax success stories Lagos, payroll implementation Nigeria, accounting testimonials",
 };
 
 export default function CaseStudiesPage() {
@@ -179,7 +179,7 @@ export default function CaseStudiesPage() {
     
         </div>
           </section>
-      {/* Case Studies */}
+      {/* projects */}
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="space-y-24">

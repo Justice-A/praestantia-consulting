@@ -79,7 +79,7 @@ export default function Header() {
               )}
             </div>
             <Link href="/case-studies" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">
-              Case studies
+              Projects
             </Link>
             <Link href="/contact" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">
               Contact us
@@ -121,6 +121,13 @@ export default function Header() {
             >
               Home
             </Link>
+                 <Link 
+              href="/about" 
+              className="block py-2 text-gray-700 hover:text-purple-600"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              About
+            </Link>
 
             {/* Services - Accordion style on mobile */}
             <div>
@@ -155,19 +162,13 @@ export default function Header() {
               )}
             </div>
 
-            <Link 
-              href="/about" 
-              className="block py-2 text-gray-700 hover:text-purple-600"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              About
-            </Link>
+       =
             <Link 
               href="/case-studies" 
               className="block py-2 text-gray-700 hover:text-purple-600"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Case studies
+              Projects
             </Link>
             <Link 
               href="/contact" 
