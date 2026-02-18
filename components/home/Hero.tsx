@@ -16,11 +16,11 @@ const heroHeaderIn = {
 
 export default function Hero() {
   return (
-    <section className="relative bg-white text-center h-screen flex flex-col justify-center overflow-hidden' : 'relative bg-white text-center h-screen flex flex-col justify-center overflow-hidden">
+    <section className="relative bg-white text-center h-screen flex flex-col justify-center overflow-hidden">
       <div className="absolute inset-0 z-0 w-full h-full overflow-hidden">
         <Image
           src="/accountant-image.jpg"
-          alt="Toyin Aregbesola - Fellow Chartered Accountant"
+          alt="Hero image of an accountant working at a desk with financial documents and a laptop"
           fill
           className="object-cover brightness-[0.2]"
           priority
