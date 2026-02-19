@@ -82,7 +82,7 @@ export default function WhyChooseUs() {
             {/* Card 1 */}
             <motion.div
               variants={leftCard}
-              className="bg-gray-50 p-8 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow"
+              className="bg-gray-50 p-8 md:p-4 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow"
             >
               <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                 <Award className="w-6 h-6 text-purple-600" />
@@ -98,7 +98,7 @@ export default function WhyChooseUs() {
             {/* Card 2 */}
             <motion.div
               variants={rightCard}
-              className="bg-gray-50 p-8 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow"
+              className="bg-gray-50 p-8 md:p-4 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow"
             >
               <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                 <CheckCircle className="w-6 h-6 text-purple-600" />
@@ -114,7 +114,7 @@ export default function WhyChooseUs() {
             {/* Card 3 */}
             <motion.div
               variants={leftCard}
-              className="bg-gray-50 p-8 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow"
+              className="bg-gray-50 p-8 md:p-4 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow"
             >
               <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                 <Users className="w-6 h-6 text-purple-600" />
@@ -130,7 +130,7 @@ export default function WhyChooseUs() {
             {/* Card 4 */}
             <motion.div
               variants={rightCard}
-              className="bg-gray-50 p-8 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow"
+              className="bg-gray-50 p-8 md:p-4 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow"
             >
               <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                 <TrendingUp className="w-6 h-6 text-purple-600" />

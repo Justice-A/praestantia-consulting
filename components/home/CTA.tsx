@@ -15,7 +15,7 @@ const subtleHeaderIn = {
 
 export default function CTA() {
   return (
-    <section className="bg-purple-600 py-16 lg:py-41 relative overflow-hidden">
+    <section className="bg-white/10 py-16 lg:py-41 relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>

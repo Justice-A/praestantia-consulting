@@ -16,7 +16,7 @@ const heroHeaderIn = {
 
 export default function Hero() {
   return (
-    <section className="relative text-center overflow-hidden">
+    <section className="relative sm:py-24 md:py-24 text-center overflow-hidden">
       <div className="absolute inset-0 -z-10">
         <Image
           src="/hero-image.jpg"

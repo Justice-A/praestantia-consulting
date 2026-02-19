@@ -97,12 +97,12 @@ export default function Footer() {
                   praestantiaconsult@gmail.com
                 </a>
               </li>
-              <li className="flex items-start gap-2">
+              {/* <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-0.5 text-purple-400 flex-shrink-0" />
                 <span className="leading-relaxed">
                   Behind Davitech Oil, Lekki Epe Expressway, Lagos
                 </span>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

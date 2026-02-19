@@ -123,7 +123,7 @@ export default function Header() {
             </Link>
                  <Link 
               href="/about" 
-              className="block py-2 text-gray-700 hover:text-purple-600"
+              className="block py-2 text-gray-700 hover:text-purple-600 font-medium"
               onClick={() => setMobileMenuOpen(false)}
             >
               About
@@ -161,18 +161,16 @@ export default function Header() {
                 </div>
               )}
             </div>
-
-       =
             <Link 
-              href="/case-studies" 
-              className="block py-2 text-gray-700 hover:text-purple-600"
+              href="/projects" 
+              className="block py-2 text-gray-700 hover:text-purple-600 font-medium"
               onClick={() => setMobileMenuOpen(false)}
             >
               Projects
             </Link>
             <Link 
               href="/contact" 
-              className="block py-2 text-gray-700 hover:text-purple-600"
+              className="block py-2 text-gray-700 hover:text-purple-600 font-medium"
               onClick={() => setMobileMenuOpen(false)}
             >
               Contact us
