@@ -75,7 +75,7 @@ export default function Services() {
 
         {/* Services Grid - 3 columns */}
         <motion.div
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 p-10"
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-80px" }}
