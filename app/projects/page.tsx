@@ -153,8 +153,8 @@ export default function CaseStudiesPage() {
             </div> 
           <div className="max-w-7xl mx-auto px-6 lg:px-8 relative text-white">
           <div className="text-center ">
-            <h2 className="text-4xl lg:text-4xl font-bold mb-6">
-              How We've Helped <span className="text-purple-600">Nigerian Businesses</span> Succeed
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+              How We've Helped <span className="text-purple-400">Nigerian Businesses</span> Succeed
             </h2>
 
             <p className="text-xl text-purple-100 max-w-3xl mx-auto leading-relaxed">

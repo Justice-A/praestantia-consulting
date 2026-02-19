@@ -141,7 +141,7 @@ export default function ContactPage() {
               transition={{ delay: 0.2 }}
             >
               <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-                Let’s Talk About Your Business Finances
+                Let’s Talk About Your <span className="text-purple-400">Business Finances</span>
               </h1>
             </motion.div>
 

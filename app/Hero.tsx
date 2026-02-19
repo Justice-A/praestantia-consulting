@@ -30,7 +30,7 @@ export default function Hero() {
         <Container>
           <div className="flex flex-col space-y-4">
             <motion.div variants={heroHeaderIn} initial="hidden" animate="show">
-              <h1 className="text-5xl font-bold tracking-tight text-stone-50">
+              <h1 className="text-4xl lg:text-5xl font-bold tracking-tight text-stone-50">
                 Professional <span className="text-purple-600">Accounting Services</span> for Nigerian Businesses
               </h1>
             </motion.div>

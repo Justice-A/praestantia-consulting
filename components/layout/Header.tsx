@@ -78,7 +78,7 @@ export default function Header() {
                 </div>
               )}
             </div>
-            <Link href="/case-studies" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">
+            <Link href="/projects" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">
               Projects
             </Link>
             <Link href="/contact" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">

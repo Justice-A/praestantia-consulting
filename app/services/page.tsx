@@ -17,12 +17,12 @@ export default function ServicesPage() {
       description: "NTA 2025 compliant payroll systems designed for Lagos SMEs and startups. Automated tax calculations, monthly payslip generation, and full compliance.",
       icon: Users,
       iconBg: "bg-purple-500",
-      features: [
-        "NTA 2025 compliant payroll design",
-        "Automated PAYE, Pension, NHF calculations",
-        "Monthly payslip generation",
-        "Annual tax remittance support",
-      ],
+      // features: [
+      //   "NTA 2025 compliant payroll design",
+      //   "Automated PAYE, Pension, NHF calculations",
+      //   "Monthly payslip generation",
+      //   "Annual tax remittance support",
+      // ],
     },
     {
       title: "Tax Advisory & Filing",
@@ -30,12 +30,12 @@ export default function ServicesPage() {
       description: "Expert tax planning and filing services for businesses and individuals. VAT returns, income tax, and annual returns filed accurately and on time.",
       icon: FileText,
       iconBg: "bg-purple-500",
-      features: [
-        "Personal income tax (self-assessment)",
-        "Corporate tax filing",
-        "Monthly VAT returns with FRS",
-        "Annual company returns (IRS & FRS)",
-      ],
+      // features: [
+      //   "Personal income tax (self-assessment)",
+      //   "Corporate tax filing",
+      //   "Monthly VAT returns with FRS",
+      //   "Annual company returns (IRS & FRS)",
+      // ],
     },
     {
       title: "Accounting System Design",
@@ -43,12 +43,12 @@ export default function ServicesPage() {
       description: "Custom chart of accounts and workflows built specifically for your business needs. Complete setup, integration, and staff training.",
       icon: Settings,
       iconBg: "bg-purple-500",
-      features: [
-        "Chart of accounts design",
-        "Accounting software selection",
-        "Standard operating procedures",
-        "Staff training and support",
-      ],
+      // features: [
+      //   "Chart of accounts design",
+      //   "Accounting software selection",
+      //   "Standard operating procedures",
+      //   "Staff training and support",
+      // ],
     },
     {
       title: "Bookkeeping & Compliance",
@@ -56,12 +56,12 @@ export default function ServicesPage() {
       description: "Monthly financial reports and ongoing compliance support. Keep your finances organized and tax-ready year-round.",
       icon: BookOpen,
       iconBg: "bg-purple-500",
-      features: [
-        "Daily transaction recording",
-        "Bank reconciliation",
-        "Monthly financial statements",
-        "Accounts payable/receivable",
-      ],
+      // features: [
+      //   "Daily transaction recording",
+      //   "Bank reconciliation",
+      //   "Monthly financial statements",
+      //   "Accounts payable/receivable",
+      // ],
     },
     {
       title: "Filing of Company Returns & Self Assessment",
@@ -70,12 +70,12 @@ export default function ServicesPage() {
         "Accurate and timely filing of company annual returns and self-assessment tax returns for businesses and individuals in Nigeria, ensuring full regulatory compliance and peace of mind.",
       icon: BookOpen,
       iconBg: "bg-purple-500",
-      features: [
-        "Preparation and filing of annual company returns",
-        "Self-assessment tax returns for directors and individuals",
-        "FIRS and CAC compliance support",
-        "Penalty avoidance and deadline management",
-      ],
+      // features: [
+      //   "Preparation and filing of annual company returns",
+      //   "Self-assessment tax returns for directors and individuals",
+      //   "FIRS and CAC compliance support",
+      //   "Penalty avoidance and deadline management",
+      // ],
     },
 
     {
@@ -85,12 +85,12 @@ export default function ServicesPage() {
       "Custom pricing and costing templates designed to help SMEs and growing businesses in Nigeria set profitable prices, manage costs, and improve financial decision-making.",
     icon: BookOpen,
     iconBg: "bg-purple-500",
-    features: [
-      "Cost analysis and profit margin calculations",
-      "Break-even and markup modelling",
-      "Industry-specific pricing frameworks",
-      "Excel-based automated pricing templates",
-    ],
+    // features: [
+    //   "Cost analysis and profit margin calculations",
+    //   "Break-even and markup modelling",
+    //   "Industry-specific pricing frameworks",
+    //   "Excel-based automated pricing templates",
+    // ],
     },
     {
       title: "Recruitment & Training of Account Staff",
@@ -99,12 +99,12 @@ export default function ServicesPage() {
         "Professional recruitment and hands-on training of accounting personnel to ensure your finance team operates efficiently, accurately, and in compliance with Nigerian regulations.",
       icon: Users,
       iconBg: "bg-purple-500",
-      features: [
-        "Screening and selection of qualified accounting staff",
-        "On-the-job training in bookkeeping and compliance",
-        "Implementation of internal financial controls",
-        "Performance evaluation and process improvement",
-      ],
+      // features: [
+      //   "Screening and selection of qualified accounting staff",
+      //   "On-the-job training in bookkeeping and compliance",
+      //   "Implementation of internal financial controls",
+      //   "Performance evaluation and process improvement",
+      // ],
   },
 
     {
@@ -114,12 +114,12 @@ export default function ServicesPage() {
     "Preparation and filing of monthly VAT returns with the Nigerian Revenue Service (FRS), ensuring accurate reporting, timely submission, and full tax compliance.",
   icon: BookOpen,
   iconBg: "bg-purple-500",
-  features: [
-    "Monthly VAT computation and reconciliation",
-    "FRS-compliant documentation and filing",
-    "Input and output VAT analysis",
-    "Advisory on VAT compliance and penalties",
-  ],
+  // features: [
+  //   "Monthly VAT computation and reconciliation",
+  //   "FRS-compliant documentation and filing",
+  //   "Input and output VAT analysis",
+  //   "Advisory on VAT compliance and penalties",
+  // ],
 },
 
 ];
@@ -149,7 +149,7 @@ return (
         priority /> 
         </div> 
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-           <h2 className="text-4xl lg:text-4xl font-bold text-white mb-6"> Our Professional Accounting Services </h2> 
+           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6"> Our Professional <span className="text-purple-400">Accounting Services </span></h2> 
            <p className="text-xl text-gray-200 leading-relaxed mb-10"> Comprehensive financial solutions designed to help Nigerian businesses stay compliant, profitable, and positioned for growth. </p> 
            {/* HERO BUTTONS */} 
            <div className="flex flex-col sm:flex-row justify-center gap-4"> 
@@ -186,11 +186,11 @@ return (
                     {service.title}
                   </h3>
 
-                  <p className="text-sm text-gray-600 leading-relaxed mb-4">
+                  <p className="text-md text-gray-600 leading-relaxed mb-4">
                     {service.description}
                   </p>
 
-                  <ul className="space-y-2 mb-6">
+                  {/* <ul className="space-y-2 mb-6">
                     {service.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-600 shrink-0 mt-0.5" />
@@ -199,7 +199,7 @@ return (
                         </span>
                       </li>
                     ))}
-                  </ul>
+                  </ul> */}
                   {index < 4 && (
                     <Link
                       href={`/services/${service.slug}`}
