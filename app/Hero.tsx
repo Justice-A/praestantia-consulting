@@ -16,7 +16,7 @@ const heroHeaderIn = {
 
 export default function Hero() {
   return (
-    <section className="relative sm:py-24 md:py-24 text-center overflow-hidden">
+    <section className="relative text-center overflow-hidden">
       <div className="absolute inset-0 -z-10">
         <Image
           src="/hero-image.jpg"
@@ -26,9 +26,7 @@ export default function Hero() {
           priority
         />
       </div>
-
-    
-      <div className="relative z-20 mx-auto  h-screen flex flex-col justify-center w-full">
+      <div className="relative z-20 mx-auto h-screen flex flex-col justify-center w-full">
         <Container>
           <div className="flex flex-col space-y-4">
             <motion.div variants={heroHeaderIn} initial="hidden" animate="show">
