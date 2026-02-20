@@ -58,7 +58,7 @@ export default function About() {
             variants={staggerContainer}
           >
             <motion.p variants={fadeInUp}>
-              Praestantia is built on the principle that <strong className="text-purple-600">sound financial structure is the backbone of every sustainable business</strong>.
+              Praestantia is built on the principle that sound financial structure is the backbone of every sustainable business.
             </motion.p>
 
             <motion.p variants={fadeInUp}>
@@ -70,7 +70,7 @@ export default function About() {
             </motion.p>
 
             <motion.p
-              className="text-xl font-semibold text-purple-600 pt-4"
+              className="text-xl font-semibold text-gray-600 pt-4"
               variants={fadeInUp}
             >
               We provide experienced, hands-on support to organisations that need sound financial management without immediately building a full in-house finance function.

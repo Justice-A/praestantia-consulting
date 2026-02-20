@@ -57,7 +57,7 @@ export default function Header() {
 
               {/* Dropdown Menu */}
               {servicesDropdownOpen && (
-                <div className="absolute top-full left-0 mt-1 w-64 bg-white rounded-lg shadow-xl border border-gray-200 py-2 space-y-2 animate-fade-in-up">
+                <div className="absolute top-full left-0  w-64 bg-white rounded-lg shadow-xl border border-gray-200 py-2 space-y-2 animate-fade-in-up">
                   {services.map((service, index) => (
                     <Link
                       key={index}
@@ -78,9 +78,9 @@ export default function Header() {
                 </div>
               )}
             </div>
-            <Link href="/projects" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">
+            {/* <Link href="/projects" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">
               Projects
-            </Link>
+            </Link> */}
             <Link href="/contact" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">
               Contact us
             </Link>
@@ -161,13 +161,13 @@ export default function Header() {
                 </div>
               )}
             </div>
-            <Link 
+            {/* <Link 
               href="/projects" 
               className="block py-2 text-gray-700 hover:text-purple-600 font-medium"
               onClick={() => setMobileMenuOpen(false)}
             >
               Projects
-            </Link>
+            </Link> */}
             <Link 
               href="/contact" 
               className="block py-2 text-gray-700 hover:text-purple-600 font-medium"
