@@ -41,11 +41,11 @@ export default function Hero() {
             </motion.div>
              <motion.div variants={heroHeaderIn} initial="hidden" animate="show" transition={{ delay: 0.4 }}>
             <div className="mt-10 flex flex-row items-center justify-center gap-4">
-              <Link href="/services" className="rounded-md bg-purple-600 px-8 py-4 text-sm font-semibold text-white shadow-sm hover:bg-purple-500 transition-colors">
+              <Link href="/services" className="rounded-md bg-purple-600 px-4 py-2 lg:px-8 lg:py-4  text-sm font-semibold text-white shadow-sm hover:bg-purple-500 transition-colors">
                 View services
               </Link>
               <Link href="/contact"
-                className="rounded-md  bg-white px-8 py-4 text-sm font-semibold text-purple-600 hover:bg-purple-100 transition-colors">
+                className="rounded-md  bg-white  px-4 py-2 lg:px-8 lg:py-4 text-sm font-semibold text-purple-600 hover:bg-purple-100 transition-colors">
                 Get started
               </Link>
             </div>
