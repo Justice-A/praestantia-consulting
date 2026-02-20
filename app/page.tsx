@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Hero from "@/app/Hero";
-import WhyChooseUs from "@/components/home/WhyChooseUs";
+// import WhyChooseUs from "@/components/home/WhyChooseUs";
 import NotableProjects from "@/components/home/NotableProjects";
 import Services from "@/components/home/Services";
 // import ServiceAreas from "@/components/home/ServiceAreas";
@@ -12,7 +12,6 @@ export default function Home() {
     <div> 
     <Hero />
     <About />
-    <WhyChooseUs/>
     <NotableProjects />
     <Services/>
     {/* <ServiceAreas/> */}

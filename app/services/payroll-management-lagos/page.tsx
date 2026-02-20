@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { CheckCircle, ArrowRight, Users, Clock, Shield, TrendingUp } from "lucide-react";
 import Hero from "@/app/Hero";
+import CTA from "@/components/home/CTA";
 
 export const metadata = {
   title: "Payroll Management Services in Lagos | NTA 2025 Compliant",
@@ -58,13 +59,13 @@ export default function PayrollManagementPage() {
       title: "Service Businesses",
       description: "Commission-based pay, bonuses, and variable compensation managed seamlessly",
     },
+    {
+      title: "Companies Struggling with Compliance",
+      description: "Ensure accurate PAYE, Pension, NHF, and statutory deductions while avoiding costly penalties and audit risks.",
+    },
   ];
 
   const faqs = [
-    {
-      question: "What is NTA 2025 and why does it matter?",
-      answer: "The Nigeria Tax Administration (NTA) 2025 introduces stricter compliance requirements for payroll systems, including enhanced reporting and tax calculation accuracy. Non-compliance can result in penalties. Our systems are built to meet these standards from day one.",
-    },
     {
       question: "How long does payroll system setup take?",
       answer: "Typical setup takes 2-4 weeks depending on company size and complexity. This includes system design, software configuration, data migration, testing, and staff training.",
@@ -82,73 +83,62 @@ export default function PayrollManagementPage() {
   return (
     <>
    
-      <section className="bg-linear-to-br from-blue-50 to-white py-20 lg:py-28">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Text Content */}
-            <div>
-              <Link
-                href="/services"
-                className="inline-flex items-center gap-2 text-purple-600 font-semibold hover:text-purple-700 mb-6"
-              >
-                <ArrowRight className="w-4 h-4 rotate-180" />
-                Back to Services
-              </Link>
-              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                NTA 2025 Compliant Payroll Management for Lagos Businesses
-              </h1>
+    <section className="relative py-18  overflow-hidden">
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src="/payroll-image.jpg" 
+          alt="Payroll Management Lagos"
+          fill
+          className="object-cover brightness-[0.1]"
+          priority
+        />
+      </div>
 
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Professional payroll systems designed for SMEs and startups. Automated tax calculations, monthly payslips, and full compliance with Nigerian regulations.
-              </p>
+      <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+        <Link
+          href="/services"
+          className="inline-flex items-center gap-2 text-purple-300 font-semibold hover:text-purple-400 mb-6"
+        >
+          <ArrowRight className="w-4 h-4 rotate-180" />
+          Back to Services
+        </Link>
 
-              <div className="flex flex-wrap gap-4">
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center gap-2 bg-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-lg"
-                >
-                  View services
-                  <ArrowRight className="w-5 h-5" />
-                </Link>
-                <a
-                  href="tel:08080913334"
-                  className="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold border-2 border-purple-600 hover:bg-purple-50 transition-all"
-                >
-                  Call 08080913334
-                </a>
-              </div>
-            </div>
+        <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+          NTA 2025 Compliant <span className="text-purple-600"> Payroll Management</span> for Nigerian Businesses
+        </h1>
 
-            {/* Image/Visual */}
-            <div className="relative">
-              <div className="bg-blue-100 rounded-2xl p-12 text-center">
-                <Users className="w-32 h-32 text-blue-600 mx-auto mb-6" />
-                <div className="space-y-4">
-                  <div className="bg-white rounded-lg p-4 shadow-lg">
-                    <div className="text-3xl font-bold text-blue-600">80%</div>
-                    <div className="text-sm text-gray-600">Time Savings</div>
-                  </div>
-                  <div className="bg-white rounded-lg p-4 shadow-lg">
-                    <div className="text-3xl font-bold text-green-600">100%</div>
-                    <div className="text-sm text-gray-600">NTA Compliant</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <p className="text-xl text-gray-200 mb-10 leading-relaxed">
+          Professional payroll systems designed for SMEs and startups.
+          Automated tax calculations, monthly payslips, and full compliance
+          with Nigerian regulations.
+        </p>
+
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <Link
+            href="/services"
+            className="inline-flex items-center gap-2 bg-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-lg"
+          >
+            View Services
+          </Link>
+
+          <Link
+            href="/contact"
+            className="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold border-2 border-purple-600 hover:bg-purple-100 transition-all"
+          >
+            Get Started
+          </Link>
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* Key Features */}
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
               Why Our Payroll Service Stands Out
+              <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
             </h2>
-            <p className="text-lg text-gray-600">
-              More than just processing—strategic payroll management
-            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -172,58 +162,39 @@ export default function PayrollManagementPage() {
         </div>
       </section>
 
-      {/* What's Included */}
+        {/* What's Included */}
       <section className="bg-gray-50 py-24">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-8">
-                What's Included in Our Payroll Service
-              </h2>
-              <p className="text-lg text-gray-600 mb-8">
-                Comprehensive payroll management from setup to ongoing support
-              </p>
-              <ul className="space-y-4">
-                {whatWeInclude.map((item, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-700 text-lg">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+          
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            What's Included in Our Payroll Service
+            <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
+          </h2>
 
-            <div className="bg-white rounded-2xl p-8 shadow-xl">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                Recent Success Story
-              </h3>
-              <div className="space-y-4 text-gray-700">
-                <p>
-                  <strong className="text-purple-600">Challenge:</strong> A Lagos-based manufacturing company with 50+ employees was processing payroll manually, leading to errors and missed tax deadlines.
-                </p>
-                <p>
-                  <strong className="text-purple-600">Solution:</strong> We designed and implemented a custom NTA 2025 compliant payroll system with automated tax calculations.
-                </p>
-                <p>
-                  <strong className="text-purple-600">Results:</strong>
-                </p>
-                <ul className="space-y-2 pl-4">
-                  <li>• 80% reduction in payroll processing time</li>
-                  <li>• Zero tax penalties in 12 months</li>
-                  <li>• 100% employee satisfaction with timely, accurate payslips</li>
-                </ul>
-              </div>
-            </div>
+          <p className="text-lg text-gray-600 mb-12">
+            Comprehensive payroll management from setup to ongoing support
+          </p>
+          <div className="max-w-5xl mx-auto p-4">
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 justify-items-center">
+              {whatWeInclude.map((item, index) => (
+                <li key={index} className="flex items-start gap-4 text-left w-full">
+                  <CheckCircle className="w-6 h-6 text-purple-600 flex-shrink-0 mt-1" />
+                  <span className="text-gray-700 text-lg leading-snug">{item}</span>
+                </li>
+              ))}
+            </ul>
           </div>
+
+
         </div>
       </section>
-
       {/* Who It's For */}
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
               Who This Service Is For
+              <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
             </h2>
             <p className="text-lg text-gray-600">
               Tailored solutions for different business types
@@ -249,8 +220,9 @@ export default function PayrollManagementPage() {
       <section className="bg-gray-50 py-24">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
               Frequently Asked Questions
+              <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
             </h2>
           </div>
 
@@ -268,6 +240,7 @@ export default function PayrollManagementPage() {
           </div>
         </div>
       </section>
+      <CTA/>
     </>
   );
 }

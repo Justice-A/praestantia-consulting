@@ -32,7 +32,7 @@ const fadeUpDelayed = {
 
 export default function NotableProjects() {
   const projects = [
-    "Designed NTA 2025 compliant payroll system for Lagos manufacturing company",
+    "Designed NTA 2025 compliant payroll system for Lagos service company",
     "Built complete accounting department from scratch for tech startup",
     "Created costing and pricing templates for offshore cleaning services",
     "Set up chart of accounts for accounting software implementation"
@@ -81,27 +81,7 @@ export default function NotableProjects() {
           ))}
            </motion.div>
 
-        <div className="text-center\">
-          <Link 
-            href="/case-studies" 
-            className="inline-flex items-center gap-2 text-purple-600 font-semibold hover:text-purple-700 transition-colors text-lg"
-          >
-            See Case Studies
-            <svg 
-              className="w-5 h-5" 
-              fill="none" 
-              viewBox="0 0 24 24" 
-              stroke="currentColor"
-            >
-              <path 
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
-                strokeWidth={2} 
-                d="M17 8l4 4m0 0l-4 4m4-4H3" 
-              />
-            </svg>
-          </Link>
-        </div>
+  
       </div>
     </section>
   );

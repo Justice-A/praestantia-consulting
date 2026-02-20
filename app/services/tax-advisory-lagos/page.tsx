@@ -1,7 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
 import { CheckCircle, ArrowRight, FileText, Clock, Shield, TrendingUp, Calculator, Users } from "lucide-react";
 import Hero from "@/app/Hero";
-
+import CTA from "@/components/home/CTA";
 export const metadata = {
   title: "Tax Advisory & Filing Services in Nigeria | VAT, Income Tax, Annual Returns",
   description: "Expert tax planning and filing for Nigerian businesses. VAT returns, corporate tax, personal income tax, and annual returns. Lagos-based, serving clients nationwide.",
@@ -112,64 +113,49 @@ export default function TaxAdvisoryPage() {
   return (
     <>
 
-      <section className="bg-linear-to-br from-purple-50 to-white py-20 lg:py-28">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Text Content */}
-            <div>
-              <Link
-                href="/services"
-                className="inline-flex items-center gap-2 text-purple-600 font-semibold hover:text-purple-700 mb-6"
-              >
-                <ArrowRight className="w-4 h-4 rotate-180" />
-                Back to Services
-              </Link>
-
-              <h2 className="text-4xl lg:text-44xl font-bold text-gray-900 mb-6">
-                Expert Tax Advisory & Filing for Nigerian Businesses
-              </h2>
-
-              <p className="text-xl text-gray-600 mb-4 leading-relaxed">
-                Strategic tax planning and filing services for businesses and individuals across Nigeria. Based in Lagos, serving clients nationwide.
-              </p>
-
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                From VAT returns to corporate tax planning, we ensure full compliance while optimizing your tax position.
-              </p>
-
-              <div className="flex flex-wrap gap-4">
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center gap-2 bg-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-lg"
-                >
-                  Get Free Tax Consultation
-                  <ArrowRight className="w-5 h-5" />
-                </Link>
-                <a
-                  href="tel:08080913334"
-                  className="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold border-2 border-purple-600 hover:bg-purple-50 transition-all"
-                >
-                  Call 08080913334
-                </a>
+      <section className="relative py-24 overflow-hidden">
+              <div className="absolute inset-0 -z-10">
+                <Image
+                  src="/tax-advisory.jpg"
+                  alt="Tax Advisory Services Nigeria"
+                  fill
+                  className="object-cover brightness-[0.1]"
+                  priority
+                />
               </div>
-            </div>
 
-            {/* Visual */}
-            <div className="relative">
-              <div className="bg-purple-100 rounded-2xl p-12 text-center">
-                <FileText className="w-32 h-32 text-purple-600 mx-auto mb-6" />
-                <div className="space-y-4">
-                  <div className="bg-white rounded-lg p-4 shadow-lg">
-                    <div className="text-3xl font-bold text-purple-600">25</div>
-                    <div className="text-sm text-gray-600">Years Tax Expertise</div>
-                  </div>
-                  <div className="bg-white rounded-lg p-4 shadow-lg">
-                    <div className="text-3xl font-bold text-green-600">100%</div>
-                    <div className="text-sm text-gray-600">On-Time Filing</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+          <Link
+            href="/services"
+            className="inline-flex items-center gap-2 text-purple-400 font-semibold hover:text-purple-500 mb-6"
+          >
+            <ArrowRight className="w-4 h-4 rotate-180" />
+            Back to Services
+          </Link>
+
+          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+            Expert <span className="text-purple-600">Tax Advisory & Filing</span> for Nigerian Businesses
+          </h1>
+
+          <p className="text-xl text-gray-200 mb-10 leading-relaxed">
+            Strategic tax planning and filing services for businesses and individuals across Nigeria.
+            Based in Lagos, serving clients nationwide with full FIRS compliance.
+          </p>
+
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Link
+              href="/services"
+              className="inline-flex items-center gap-2 bg-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-lg"
+            >
+              View Services
+            </Link>
+
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold border-2 border-purple-600 hover:bg-purple-100 transition-all"
+            >
+              Get Started
+            </Link>
           </div>
         </div>
       </section>
@@ -178,8 +164,9 @@ export default function TaxAdvisoryPage() {
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
               Comprehensive Tax Services
+              <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
             </h2>
             <p className="text-lg text-gray-600">
               Everything you need for tax compliance and optimization
@@ -211,8 +198,9 @@ export default function TaxAdvisoryPage() {
       <section className="bg-gray-50 py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl  font-bold text-gray-900 mb-4">
               What We Cover
+              <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
             </h2>
             <p className="text-lg text-gray-600">
               Full-spectrum tax services for Nigerian businesses
@@ -222,7 +210,7 @@ export default function TaxAdvisoryPage() {
           <div className="grid md:grid-cols-2 gap-8">
             {servicesOffered.map((service, index) => (
               <div key={index} className="bg-white rounded-xl p-8 shadow-lg">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-6">
                   {service.title}
                 </h3>
                 <ul className="space-y-3">
@@ -243,8 +231,9 @@ export default function TaxAdvisoryPage() {
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl  font-bold text-gray-900 mb-4">
               Who We Serve
+              <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
             </h2>
             <p className="text-lg text-gray-600">
               Tax solutions for every business stage
@@ -254,7 +243,7 @@ export default function TaxAdvisoryPage() {
           <div className="grid md:grid-cols-2 gap-8">
             {whoItsFor.map((item, index) => (
               <div key={index} className="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">
                   {item.title}
                 </h3>
                 <p className="text-gray-600 text-lg">
@@ -266,41 +255,12 @@ export default function TaxAdvisoryPage() {
         </div>
       </section>
 
-      {/* Success Story */}
-          <div className="text-center mb-12 max-w-4xl mx-auto">
-               <div className="bg-white rounded-2xl p-8 shadow-xl">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                Recent Success Story
-              </h3>
-              <div className="space-y-4 text-gray-700">
-                <p className="text-lg">
-                <strong className="text-stone-900">Client:</strong> Tech startup with 3 years of unfiled VAT returns
-              </p>
-              <p className="text-lg">
-                <strong className="text-stone-900">Challenge:</strong> ₦2.5M in potential penalties, fear of business closure
-              </p>
-              <p className="text-lg">
-                <strong className="text-stone-900">Our Solution:</strong> Voluntary disclosure program, proper documentation, penalty negotiation
-              </p>
-              <p className="text-lg">
-                <strong className="text-stone-900">Results:</strong>
-              </p>
-              <ul className="space-y-2 pl-4 text-lg">
-                <li>• All returns filed and accepted by FIRS</li>
-                <li>• Penalties reduced by 70% through negotiation</li>
-                <li>• Payment plan established over 12 months</li>
-                <li>• Business continued operations without disruption</li>
-              </ul>
-              </div>
-            </div>
-          </div>
-
-      {/* FAQ */}
       <section className="bg-gray-50 py-24">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
               Common Tax Questions
+              <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
             </h2>
           </div>
 
@@ -319,27 +279,7 @@ export default function TaxAdvisoryPage() {
         </div>
       </section>
 
-      {/* Pricing */}
-      <section className="bg-white py-24">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-6">
-            Investment & Pricing
-          </h2>
-          <p className="text-xl text-gray-600 mb-8">
-            Tax services are priced based on business size, complexity, and filing frequency. Monthly VAT filing typically starts from ₦30,000, while comprehensive annual tax planning packages range from ₦150,000 - ₦500,000.
-          </p>
-          <p className="text-lg text-gray-600 mb-8">
-            Schedule a <strong className="text-purple-600">free consultation</strong> to discuss your specific needs and receive transparent pricing.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 bg-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-lg"
-          >
-            Get Custom Quote
-            <ArrowRight className="w-5 h-5" />
-          </Link>
-        </div>
-      </section>
+      <CTA/>
     </>
   );
 }

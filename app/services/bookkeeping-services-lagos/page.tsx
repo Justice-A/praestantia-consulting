@@ -110,10 +110,6 @@ export default function BookkeepingPage() {
 
   const faqs = [
     {
-      question: "What's the difference between bookkeeping and accounting?",
-      answer: "Bookkeeping is the day-to-day recording of transactions, reconciliation, and basic reporting. Accounting involves analyzing that data, tax planning, financial strategy, and compliance. As a chartered accountant, I provide both—but many businesses just need regular bookkeeping with periodic accounting guidance.",
-    },
-    {
       question: "How often do you need access to my records?",
       answer: "Ideally, we receive bank statements, receipts, and invoices monthly. Many clients use cloud accounting software (like QuickBooks) which gives us real-time access. For others, we collect documents monthly via email or shared drive. The more current your records, the more valuable your reports.",
     },
@@ -121,106 +117,71 @@ export default function BookkeepingPage() {
       question: "Can you clean up past months if I'm behind?",
       answer: "Absolutely. We offer catch-up bookkeeping services to bring you current. Depending on how far behind you are (3 months vs 2 years), we'll provide a fixed quote for the cleanup work before starting ongoing monthly service.",
     },
-    {
-      question: "Do I need accounting software, or can you use Excel?",
-      answer: "For ongoing bookkeeping, I strongly recommend proper accounting software (QuickBooks, Zoho Books, etc). It's more accurate, easier to maintain, and provides better reports. However, if you're committed to Excel, I can work with that for very small businesses—though I'll eventually recommend upgrading.",
-    },
-    {
-      question: "What if I find an error in my books?",
-      answer: "Errors happen—especially when catching up past months. If you spot an error, we'll investigate, correct it, and adjust any affected reports. All corrections are documented for audit trail purposes. Our goal is 100% accuracy.",
-    },
   ];
 
   return (
     <>
+      <section className="relative py-24  overflow-hidden">
+        <div className="absolute inset-0 -z-10">
+          <Image
+            src="/book-keeping.jpg" 
+            alt="Bookeeping Services Nigeria"
+            fill
+            className="object-cover brightness-[0.1]"
+            priority
+          />
+        </div>
 
-      <section className="relative py-20 lg:py-32 overflow-hidden">
-          <div className="absolute inset-0 -z-10">
-            <Image
-              src="/happy-customers.jpg" 
-              alt="Success stories background"
-              fill
-              className="object-cover brightness-[0.1]" 
-              priority
-            />
-          </div>
-         <div className="max-w-7xl mx-auto px-6 lg:px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Text Content */}
-            <div>
-              <Link
-                href="/services"
-                className="inline-flex items-center gap-2 text-purple-600 font-semibold hover:text-purple-700 mb-6"
-              >
-                <ArrowRight className="w-4 h-4 rotate-180" />
-                Back to Services
-              </Link>
-              <h1 className="text-4xl lg:text-4xl font-bold text-white mb-6">
-                Professional Bookkeeping for Nigerian Businesses
-              </h1>
+        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+          <Link
+            href="/services"
+            className="inline-flex items-center gap-2 text-purple-300 font-semibold hover:text-purple-400 mb-6"
+          >
+            <ArrowRight className="w-4 h-4 rotate-180" />
+            Back to Services
+          </Link>
 
-              <p className="text-xl text-white mb-4 leading-relaxed">
-                Monthly bookkeeping and financial reporting that keeps your business organized and tax-ready.
-              </p>
+          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+            Professional <span className="text-purple-600"> Bookkeeping</span> for Nigerian Businesses
+          </h1>
 
-              <p className="text-lg text-white mb-8 leading-relaxed">
-                Based in Lagos, serving SMEs and startups across Nigeria with reliable bookkeeping you can count on.
-              </p>
+          <p className="text-xl text-gray-200 mb-10 leading-relaxed">
+            Monthly bookkeeping and financial reporting that keeps your business organized and tax-ready.
+            serving SMEs and startups across Nigeria with reliable bookkeeping you can count on.
+          </p>
 
-              <div className="flex flex-wrap gap-4">
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center gap-2 bg-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-lg"
-                >
-                  Get Free Consultation
-                  <ArrowRight className="w-5 h-5" />
-                </Link>
-                <a
-                  href="tel:08080913334"
-                  className="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold border-2 border-purple-600 hover:bg-purple-50 transition-all"
-                >
-                  Call 08080913334
-                </a>
-              </div>
-            </div>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Link
+              href="/services"
+              className="inline-flex items-center gap-2 bg-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-lg"
+            >
+              View Services
+            </Link>
 
-            {/* Visual */}
-            <div className="relative">
-              <div className="bg-purple-100 rounded-2xl p-12 text-center">
-                <BookOpen className="w-32 h-32 text-purple-600 mx-auto mb-6" />
-                <div className="space-y-4">
-                  <div className="bg-white rounded-lg p-4 shadow-lg">
-                    <div className="text-3xl font-bold text-purple-600">10th</div>
-                    <div className="text-sm text-gray-600">Monthly Reports Delivered</div>
-                  </div>
-                  <div className="bg-white rounded-lg p-4 shadow-lg">
-                    <div className="text-3xl font-bold text-purple-600">100%</div>
-                    <div className="text-sm text-gray-600">Accurate Records</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold border-2 border-purple-600 hover:bg-purple-100 transition-all"
+            >
+              Get Started
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Key Features */}
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl  font-bold text-gray-900 mb-4">
               What Makes Our Bookkeeping Different
+              <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
             </h2>
-            <p className="text-lg text-gray-600">
-              More than data entry—strategic financial management
-            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => {
               const Icon = feature.icon;
               return (
-                <div key={index} className="text-center">
+                <div key={index} className="text-center bg-gray-50 p-6 rounded-3xl">
                   <div className="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
                     <Icon className="w-8 h-8 text-purple-600" />
                   </div>
@@ -237,43 +198,14 @@ export default function BookkeepingPage() {
         </div>
       </section>
 
-      {/* Monthly Services */}
-      <section className="bg-gray-50 py-24">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-8">
-                What's Included Monthly
-              </h2>
-              <p className="text-lg text-gray-600 mb-8">
-                Comprehensive bookkeeping services delivered on schedule, every month
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl p-8 shadow-xl">
-              <ul className="space-y-4">
-                {monthlyServices.map((service, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-700 text-lg">{service}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Who It's For */}
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
               Perfect For
+               <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
             </h2>
-            <p className="text-lg text-gray-600">
-              Bookkeeping solutions for every business stage
-            </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -297,81 +229,15 @@ export default function BookkeepingPage() {
         </div>
       </section>
 
-      {/* Pricing */}
-      <section className="bg-gray-50 py-24">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Simple, Transparent Pricing
-            </h2>
-            <p className="text-lg text-gray-600">
-              Choose the plan that fits your business size
-            </p>
-          </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {pricingTiers.map((tier, index) => (
-              <div 
-                key={index} 
-                className={`bg-white rounded-2xl p-8 shadow-lg ${
-                  tier.popular ? 'border-2 border-purple-600 relative' : 'border border-gray-200'
-                }`}
-              >
-                {tier.popular && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                    <span className="bg-purple-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
-                      Most Popular
-                    </span>
-                  </div>
-                )}
-
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                  {tier.name}
-                </h3>
-                <p className="text-gray-600 mb-6">
-                  {tier.description}
-                </p>
-
-                <div className="mb-6">
-                  <span className="text-4xl font-bold text-gray-900">{tier.price}</span>
-                  <span className="text-gray-600">/month</span>
-                </div>
-
-                <ul className="space-y-3 mb-8">
-                  {tier.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-start gap-2">
-                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-700">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <Link
-                  href="/contact"
-                  className={`block text-center px-6 py-3 rounded-lg font-semibold transition-all ${
-                    tier.popular
-                      ? 'bg-purple-600 text-white hover:bg-purple-700'
-                      : 'bg-gray-100 text-gray-900 hover:bg-gray-200'
-                  }`}
-                >
-                  Get Started
-                </Link>
-              </div>
-            ))}
-          </div>
-
-          <p className="text-center text-gray-600 mt-8">
-            Not sure which plan? <Link href="/contact" className="text-purple-600 font-semibold hover:text-purple-700">Schedule a free consultation</Link> and we'll recommend the best fit.
-          </p>
-        </div>
-      </section>
 
       {/* FAQ */}
       <section className="bg-white py-24">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
               Common Questions
+               <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
             </h2>
           </div>
 
