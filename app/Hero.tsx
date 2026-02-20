@@ -30,13 +30,13 @@ export default function Hero() {
         <Container>
           <div className="flex flex-col space-y-4">
             <motion.div variants={heroHeaderIn} initial="hidden" animate="show">
-              <h1 className="text-4xl lg:text-5xl font-bold tracking-tight text-stone-50">
-                Professional <span className="text-purple-600">Accounting Services</span> for Nigerian Businesses
+              <h1 className="text-5xl font-bold tracking-tight text-stone-50">
+               Practical <span className="text-purple-600">Finance Solutions</span> In Nigeria
               </h1>
             </motion.div>
             <motion.div variants={heroHeaderIn} initial="hidden" animate="show" transition={{ delay: 0.2 }}>
               <p className="mt-6 text-2xl text-stone-50 leading-relaxed max-w-6xl mx-auto">
-               Helping SMEs and startups stay tax-compliant, financially organized, and growth-ready.
+               At Praestantia, we help businesses put structure and clarity into their finance and operations. From payroll and tax compliance to reporting, process improvement, and team capacity building, we deliver practical solutions that reduce risk, improve accuracy, and enable sustainable growth.
               </p>
             </motion.div>
              <motion.div variants={heroHeaderIn} initial="hidden" animate="show" transition={{ delay: 0.4 }}>
@@ -45,7 +45,7 @@ export default function Hero() {
                 View services
               </Link>
               <Link href="/contact"
-                className="rounded-md border border-purple-600 bg-white px-8 py-4 text-sm font-semibold text-purple-600 hover:bg-purple-100 transition-colors">
+                className="rounded-md  bg-white px-8 py-4 text-sm font-semibold text-purple-600 hover:bg-purple-100 transition-colors">
                 Get started
               </Link>
             </div>

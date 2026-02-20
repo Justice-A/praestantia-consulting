@@ -141,7 +141,7 @@ export default function ContactPage() {
               transition={{ delay: 0.2 }}
             >
               <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-                Let’s Talk About Your <span className="text-purple-400">Business Finances</span>
+                Let’s Talk About Your <span className="text-purple-500">Business Finances</span>
               </h1>
             </motion.div>
 
@@ -151,12 +151,31 @@ export default function ContactPage() {
               animate="show"
               transition={{ delay: 0.4 }}
             >
-              <p className="text-xl text-purple-100 leading-relaxed max-w-4xl mx-auto mb-8">
+              <p className="text-xl text-purple-100 leading-relaxed max-w-4xl mx-auto ">
                 Whether you need payroll setup, tax filing, or ongoing bookkeeping,
                 we're here to help. Reach out today.
               </p>
             </motion.div>
+            <motion.div
+              className="flex flex-col sm:flex-row justify-center gap-4 mt-8"
+            
+            >
+              <motion.a
+                href="https://wa.me/2348080913334"
+                className="inline-flex items-center justify-center bg-purple-600 text-white px-8 py-4 gap-2 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-md"
+              >
+                <MessageCircle className="w-5 h-5" />
+                WhatsApp
+              </motion.a>
 
+              <motion.a
+                 href="tel:08080913334"
+                className="inline-flex items-center justify-center bg-white text-purple-600 px-8 py-4 gap-2 rounded-lg font-semibold border-2 border-white hover:bg-gray-100 transition-all"
+              >
+                <Phone className="w-5 h-5" /> 
+                Call Us
+              </motion.a>
+            </motion.div>
           </div>
         </Container>
       </div>
@@ -168,10 +187,11 @@ export default function ContactPage() {
             className="text-center mb-16"
            
           >
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
               Choose Your Preferred Contact Method
+              <span className="block w-16 h-1 bg-purple-500 mx-auto mt-3"></span>
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-xl text-gray-600">
               We're available through multiple channels for your convenience
             </p>
           </div>
@@ -208,7 +228,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-  
+{/*   
       <section className="bg-white py-24">
         <div className="mx-auto px-6 lg:px-8">
           <motion.div
@@ -218,15 +238,16 @@ export default function ContactPage() {
             viewport={{ once: true }}
             variants={subtleHeaderIn}
           >
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Serving Businesses Across Nigeria
+              <span className="block w-16 h-1 bg-purple-500 mx-auto mt-3"></span>
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
               While our main office is in Lagos, we work with clients nationwide through secure remote collaboration. From Abuja to Port Harcourt, from Kano to Ibadan, if you need professional accounting services, we're here to help.
             </p>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       <section className="bg-gray-50 py-24">
         <div className="mx-auto px-6 lg:px-8">
@@ -285,7 +306,7 @@ export default function ContactPage() {
           viewport={{ once: true }}
           variants={subtleHeaderIn}
         >
-          <h2 className="text-4xl font-bold mb-8">
+          <h2 className="text-3xl font-bold mb-8">
             What Happens After You Contact Us?
           </h2>
         </motion.div>

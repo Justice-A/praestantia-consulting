@@ -15,9 +15,11 @@ export default function AnimatedHeading({ title, subtitle }: Props) {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="text-4xl font-bold text-gray-900 mb-4"
+        className="text-3xl font-bold text-gray-900 mb-4 "
+        
       >
         {title}
+        <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
       </motion.h2>
 
       {subtitle && (
@@ -26,7 +28,7 @@ export default function AnimatedHeading({ title, subtitle }: Props) {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
           viewport={{ once: true }}
-          className="text-2xl text-gray-600 mx-auto"
+          className="text-xl text-gray-600 mx-auto"
         >
           {subtitle}
         </motion.p>

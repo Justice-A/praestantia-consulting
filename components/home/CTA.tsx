@@ -33,7 +33,7 @@ export default function CTA() {
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
               Ready to Get Your Finances Organized?
             </h2>
-            <p className="text-xl text-purple-100 leading-relaxed">
+            <p className="text-xl text-gray-100 leading-relaxed">
               Contact us today. Let's discuss how we can help your business stay tax-compliant and growth-ready.
             </p>
           </motion.div>

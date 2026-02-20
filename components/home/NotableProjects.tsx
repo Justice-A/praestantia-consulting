@@ -48,8 +48,9 @@ export default function NotableProjects() {
           viewport={{ once: true }}
           variants={subtleHeaderIn}
         >
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
             Recent Client Wins
+            <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
           </h2>
           <p className="text-2xl text-gray-600  mx-auto">
             Real results for real businesses

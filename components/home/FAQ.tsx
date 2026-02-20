@@ -76,8 +76,9 @@ export default function FAQ() {
           viewport={{ once: true }}
           variants={subtleHeaderIn}
         >
-          <h2 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             Frequently Asked Questions
+            <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
           </h2>
           <p className="text-2xl text-gray-600">
             Quick answers to common questions about our accounting services

@@ -65,8 +65,9 @@ export default function Services() {
           viewport={{ once: true }}
           variants={subtleHeaderIn}
         >
-          <h3 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-4">
+          <h3 className="text-3xl  font-bold text-gray-900 mb-4">
             How We Help Lagos Businesses
+            <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
           </h3>
           <p className="text-lg text-gray-600 mx-auto">
             Comprehensive accounting services tailored for SMEs, startups, and individuals

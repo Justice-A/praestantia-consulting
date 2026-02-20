@@ -63,9 +63,10 @@ export default function WhyChooseUs() {
             viewport={{ once: true }}
             variants={subtleHeaderIn}
           >
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h3 className="text-3xl font-bold text-gray-900 mb-4">
               Why Choose Us?
-            </h2>
+              <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
+            </h3>
             <p className="text-2xl text-gray-600 mx-auto">
               Professional expertise backed by real credentials
             </p>
@@ -88,7 +89,7 @@ export default function WhyChooseUs() {
                 <Award className="w-6 h-6 text-purple-600" />
               </div>
               <p className="text-2xl text-gray-900 mb-2">
-                7+ Years Experience
+                25+ Years Experience
               </p>
               <p className="text-gray-600 text-sm">
                 Founder is a Fellow Chartered Accountant (FCA) with proven track record
@@ -107,7 +108,7 @@ export default function WhyChooseUs() {
                 ICAN & CITN Certified
               </p>
               <p className="text-gray-600 text-sm">
-                Fully licensed and regulated by professional bodies
+                Founder is fully licensed and regulated by professional bodies
               </p>
             </motion.div>
 
@@ -136,7 +137,7 @@ export default function WhyChooseUs() {
                 <TrendingUp className="w-6 h-6 text-purple-600" />
               </div>
               <p className="text-2xl text-gray-900 mb-2">
-                Serving Lagos & Beyond
+                Serving Nigeria & Beyond
               </p>
               <p className="text-gray-600 text-sm">
                 Remote support available across Nigeria and worldwide

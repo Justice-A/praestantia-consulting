@@ -16,7 +16,7 @@ export default function Footer() {
               </div>
               <div>
                 <div className="font-semibold text-white">Praestantia</div>
-                <div className="text-xs text-gray-400">Chartered Accountants</div>
+                <div className="text-xs text-gray-400">Consulting limited</div>
               </div>
             </div>
             <p className="text-sm text-gray-400 leading-relaxed">

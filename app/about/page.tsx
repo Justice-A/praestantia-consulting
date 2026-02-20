@@ -156,14 +156,14 @@ export default function AboutPage() {
                 href="/contact"
                 className="inline-flex items-center justify-center bg-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-md"
               >
-                Get Started
+                Explore Services
               </Link>
 
               <Link
                 href="/services"
                 className="inline-flex items-center justify-center bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold border-2 border-white hover:bg-gray-100 transition-all"
               >
-                Explore Services
+                Get Started
               </Link>
             </motion.div>
           </motion.div>
@@ -180,8 +180,9 @@ export default function AboutPage() {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-              About Praestantia
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 ">
+              Learn about Us
+            <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
             </h2>
           </motion.div>
 
@@ -193,7 +194,7 @@ export default function AboutPage() {
             variants={staggerContainer}
           >
             <motion.p variants={fadeInUp}>
-              Praestantia is built on the principle that <strong className="text-purple-600">sound financial structure is the backbone of every sustainable business</strong>.
+              Praestantia is built on the principle that sound financial structure is the backbone of every sustainable business.
             </motion.p>
 
             <motion.p variants={fadeInUp}>
@@ -205,7 +206,7 @@ export default function AboutPage() {
             </motion.p>
 
             <motion.p
-              className="text-xl font-semibold text-purple-600 pt-4"
+              className="text-xl font-semibold text-gray-600 pt-4"
               variants={fadeInUp}
             >
               We provide experienced, hands-on support to organisations that need sound financial management without immediately building a full in-house finance function.
@@ -214,7 +215,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Professional Credentials */}
+      {/* Professional Credentials
       <section className="bg-gray-50 py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div
@@ -261,7 +262,7 @@ export default function AboutPage() {
             })}
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* What We Do */}
       <section className="bg-white py-24">
@@ -274,9 +275,10 @@ export default function AboutPage() {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-8">
+              <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-8">
                 What We Do
-              </h2>
+
+              </h3>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
                 We help businesses move from informal or reactive practices to structured, reliable systems that support decision-making, regulatory alignment, and long-term stability.
               </p>
@@ -317,20 +319,13 @@ export default function AboutPage() {
 
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-white rounded-xl p-4 text-center shadow-lg">
-                  <div className="text-3xl font-bold text-purple-600">100+</div>
+                  <div className="text-3xl font-bold text-purple-600">10+</div>
                   <div className="text-sm text-gray-600">Businesses Served</div>
                 </div>
-                <div className="bg-white rounded-xl p-4 text-center shadow-lg">
-                  <div className="text-3xl font-bold text-purple-600">25</div>
-                  <div className="text-sm text-gray-600">Years Experience</div>
-                </div>
+
                 <div className="bg-white rounded-xl p-4 text-center shadow-lg">
                   <div className="text-3xl font-bold text-purple-600">100%</div>
                   <div className="text-sm text-gray-600">Compliance Rate</div>
-                </div>
-                <div className="bg-white rounded-xl p-4 text-center shadow-lg">
-                  <div className="text-3xl font-bold text-purple-600">FCA</div>
-                  <div className="text-sm text-gray-600">ICAN Fellow</div>
                 </div>
               </div>
             </motion.div>
@@ -350,6 +345,7 @@ export default function AboutPage() {
           >
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
               Our Approach
+              <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Praestantia combines technical knowledge with implementation-focused support. The emphasis is not only on advising, but on ensuring that solutions are workable, understood, and embedded into daily operations.
@@ -369,7 +365,7 @@ export default function AboutPage() {
                 className="bg-white rounded-xl p-8 shadow-lg relative hover:shadow-xl transition-shadow"
                 variants={scaleIn}
               >
-                <div className="text-6xl font-bold text-purple-100 absolute top-4 right-4">
+                <div className="text-6xl font-bold text-purple-200 absolute top-4 right-4">
                   {step.number}
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4 relative z-10">
@@ -396,6 +392,7 @@ export default function AboutPage() {
           >
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
               Who We Serve
+              <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Praestantia works with individuals, startups, and small to medium-sized organisations seeking to operate with greater clarity, confidence, and control.
@@ -445,6 +442,7 @@ export default function AboutPage() {
           >
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
               Our Commitment
+              <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
               Praestantia is committed to clarity, professionalism, confidentiality, and practical execution—delivering solutions that support both immediate needs and future growth.
