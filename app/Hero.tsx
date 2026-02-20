@@ -30,13 +30,13 @@ export default function Hero() {
         <Container>
           <div className="flex flex-col space-y-4">
             <motion.div variants={heroHeaderIn} initial="hidden" animate="show">
-              <h1 className="text-5xl font-bold tracking-tight text-stone-50">
+              <h1 className="text-4xl lg:text-5xl font-bold tracking-tight text-stone-50">
                Practical <span className="text-purple-600">Finance Solutions</span> In Nigeria
               </h1>
             </motion.div>
             <motion.div variants={heroHeaderIn} initial="hidden" animate="show" transition={{ delay: 0.2 }}>
-              <p className="mt-6 text-2xl text-stone-50 leading-relaxed max-w-6xl mx-auto">
-               At Praestantia, we help businesses put structure and clarity into their finance and operations. From payroll and tax compliance to reporting, process improvement, and team capacity building, we deliver practical solutions that reduce risk, improve accuracy, and enable sustainable growth.
+              <p className="mt-6 text-xl text-stone-50 leading-relaxed max-w-6xl mx-auto">
+               At Praestantia, we help businesses put structure and clarity into their finance and operations.
               </p>
             </motion.div>
              <motion.div variants={heroHeaderIn} initial="hidden" animate="show" transition={{ delay: 0.4 }}>
