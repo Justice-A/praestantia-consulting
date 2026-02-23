@@ -22,7 +22,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <Image
-              src="/logo.svg.svg"
+              src="/logo-image.png"
               alt="Praestantia Consulting Ltd"
               width={40}
               height={40}
@@ -70,7 +70,7 @@ export default function Header() {
                     <Link
                       key={index}
                       href={service.href}
-                      className="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-blue-900 transition-colors font-medium"
+                      className="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-900 transition-colors font-medium"
                     >
                       {service.name}
                     </Link>
@@ -78,7 +78,7 @@ export default function Header() {
                   <div className="border-t border-gray-200 mt-2 pt-2">
                     <Link
                       href="/services"
-                      className="block px-4 py-3 text-blue-900  hover:bg-purple-50 transition-colors"
+                      className="block px-4 py-3 text-blue-900  hover:bg-blue-50 transition-colors"
                     >
                       View All Services →
                     </Link>
@@ -97,7 +97,7 @@ export default function Header() {
 
             <Link 
               href="/contact" 
-              className="bg-blue-900 text-white px-6 py-2.5 rounded-lg hover:bg-purple-700 transition-all"
+              className="bg-blue-900 text-white px-6 py-2.5 rounded-lg hover:bg-blue-700 transition-all"
             >
               Get started
             </Link>

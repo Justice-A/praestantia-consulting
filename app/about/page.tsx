@@ -154,7 +154,7 @@ export default function AboutPage() {
             >
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center bg-blue-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-md"
+                className="inline-flex items-center justify-center bg-blue-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-all shadow-md"
               >
                 Explore Services
               </Link>
@@ -248,7 +248,7 @@ export default function AboutPage() {
                   className="bg-white rounded-xl p-6 shadow-lg text-center hover:shadow-xl transition-shadow"
                   variants={scaleIn}
                 >
-                  <div className="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
                     <Icon className="w-8 h-8 text-blue-900" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">
@@ -293,7 +293,7 @@ export default function AboutPage() {
                     className="flex items-start gap-4"
                     variants={fadeInUp}
                   >
-                    <div className="flex-shrink-0 w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
+                    <div className="flex-shrink-0 w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mt-1">
                       <CheckCircle className="w-5 h-5 text-blue-900" />
                     </div>
                     <p className="text-gray-700 leading-relaxed">{item}</p>
@@ -304,7 +304,7 @@ export default function AboutPage() {
 
             {/* Visual / Stats */}
             <motion.div
-              className="bg-gradient-to-br from-purple-100 to-indigo-100 rounded-2xl p-12"
+              className="bg-gradient-to-br from-blue-100 to-indigo-100 rounded-2xl p-12"
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
@@ -365,7 +365,7 @@ export default function AboutPage() {
                 className="bg-white rounded-xl p-8 shadow-lg relative hover:shadow-xl transition-shadow"
                 variants={scaleIn}
               >
-                <div className="text-6xl font-bold text-purple-200 absolute top-4 right-4">
+                <div className="text-6xl font-bold text-blue-200 absolute top-4 right-4">
                   {step.number}
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4 relative z-10">
@@ -414,7 +414,7 @@ export default function AboutPage() {
                   className="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow"
                   variants={fadeInUp}
                 >
-                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                     <Icon className="w-6 h-6 text-blue-900" />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">

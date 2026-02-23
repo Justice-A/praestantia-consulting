@@ -65,11 +65,11 @@ export default function NotableProjects() {
             <motion.div 
               key={index}
               variants={fadeIn}
-              className="bg-white p-8 rounded-lg border border-gray-200 hover:shadow-lg transition-all hover:border-purple-200"
+              className="bg-white p-8 rounded-lg border border-gray-200 hover:shadow-lg transition-all hover:border-blue-200"
             >
               <div className="flex items-start gap-4">
                 <div className="shrink-0">
-                  <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+                  <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
                     <CheckCircle className="w-6 h-6 text-blue-900" />
                   </div>
                 </div>

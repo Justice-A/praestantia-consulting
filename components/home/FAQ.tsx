@@ -84,7 +84,7 @@ export default function FAQ() {
               <motion.div
                 key={index}
                 variants={fadeIn}
-                className="bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-purple-200 transition-colors "
+                className="bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-blue-200 transition-colors "
               >
                 {/* Question Button */}
                 <button

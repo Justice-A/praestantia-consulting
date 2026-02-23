@@ -85,7 +85,7 @@
 //               variants={leftCard}
 //               className="bg-gray-50 p-8 md:p-4 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow"
 //             >
-//               <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+//               <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
 //                 <Award className="w-6 h-6 text-blue-900" />
 //               </div>
 //               <p className="text-2xl text-gray-900 mb-2">
@@ -101,7 +101,7 @@
 //               variants={rightCard}
 //               className="bg-gray-50 p-8 md:p-4 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow"
 //             >
-//               <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+//               <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
 //                 <CheckCircle className="w-6 h-6 text-blue-900" />
 //               </div>
 //               <p className="text-2xl text-gray-900 mb-2">
@@ -117,7 +117,7 @@
 //               variants={leftCard}
 //               className="bg-gray-50 p-8 md:p-4 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow"
 //             >
-//               <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+//               <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
 //                 <Users className="w-6 h-6 text-blue-900" />
 //               </div>
 //               <p className="text-2xl text-gray-900 mb-2">
@@ -133,7 +133,7 @@
 //               variants={rightCard}
 //               className="bg-gray-50 p-8 md:p-4 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow"
 //             >
-//               <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+//               <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
 //                 <TrendingUp className="w-6 h-6 text-blue-900" />
 //               </div>
 //               <p className="text-2xl text-gray-900 mb-2">

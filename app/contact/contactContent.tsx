@@ -76,7 +76,7 @@ export default function ContactPage() {
       primary: "praestantiaconsult@gmail.com",
       secondary: "We'll respond within 24 hours",
       href: "mailto:praestantiaconsult@gmail.com",
-      iconBg: "bg-purple-100",
+      iconBg: "bg-blue-100",
       iconColor: "text-blue-900",
       cta: "Send Email",
     },
@@ -118,7 +118,7 @@ export default function ContactPage() {
       </div>
 
       {/* Decorative blur */}
-      <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-purple-200 rounded-full blur-3xl opacity-50 z-10"></div>
+      <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-200 rounded-full blur-3xl opacity-50 z-10"></div>
 
       <div className="relative z-20 mx-auto w-full">
         <Container>
@@ -151,7 +151,7 @@ export default function ContactPage() {
               animate="show"
               transition={{ delay: 0.4 }}
             >
-              <p className="text-xl text-purple-100 leading-relaxed max-w-4xl mx-auto ">
+              <p className="text-xl text-blue-100 leading-relaxed max-w-4xl mx-auto ">
                 Whether you need payroll setup, tax filing, or ongoing bookkeeping,
                 we're here to help. Reach out today.
               </p>
@@ -162,7 +162,7 @@ export default function ContactPage() {
             >
               <motion.a
                 href="https://wa.me/2348080913334"
-                className="inline-flex items-center justify-center bg-blue-900 text-white px-8 py-4 gap-2 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-md"
+                className="inline-flex items-center justify-center bg-blue-900 text-white px-8 py-4 gap-2 rounded-lg font-semibold hover:bg-blue-700 transition-all shadow-md"
               >
                 <MessageCircle className="w-5 h-5" />
                 WhatsApp
@@ -217,7 +217,7 @@ export default function ContactPage() {
                   </p>
                   <a
                     href={method.href}
-                    className="inline-flex items-center justify-center gap-2 bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-all w-full"
+                    className="inline-flex items-center justify-center gap-2 bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all w-full"
                   >
                     {method.cta}
                   </a>
@@ -262,6 +262,7 @@ export default function ContactPage() {
           >
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Before You Reach Out
+              <span className="block w-16 h-1 bg-blue-800 mx-auto mt-3"></span>
             </h2>
             <p className="text-2xl text-gray-600 mx-auto">
               Quick answers to common questions
@@ -328,7 +329,7 @@ export default function ContactPage() {
               <span className="text-2xl font-bold">1</span>
             </div>
             <h3 className="text-xl font-bold mb-2">Initial Response</h3>
-            <p className="text-purple-100">
+            <p className="text-blue-100">
               We'll respond within 24 hours (often same-day) to acknowledge your inquiry.
             </p>
           </motion.div>
@@ -342,7 +343,7 @@ export default function ContactPage() {
               <span className="text-2xl font-bold">2</span>
             </div>
             <h3 className="text-xl font-bold mb-2">Vetting</h3>
-            <p className="text-purple-100">
+            <p className="text-blue-100">
               We'll discuss to understand your needs and recommend the best solution.
             </p>
           </motion.div>
@@ -356,7 +357,7 @@ export default function ContactPage() {
               <span className="text-2xl font-bold">3</span>
             </div>
             <h3 className="text-xl font-bold mb-2">Custom Proposal</h3>
-            <p className="text-purple-100">
+            <p className="text-blue-100">
               You'll receive a detailed proposal with transparent pricing and timelines.
             </p>
           </motion.div>
@@ -378,6 +379,7 @@ export default function ContactPage() {
       >
         <h2 className="text-4xl font-bold text-gray-900 mb-6">
           Ready to Get Started?
+          <span className="block w-16 h-1 bg-blue-800 mx-auto mt-3"></span>
         </h2>
         <p className="text-xl text-gray-600 mb-8">
           Don't let accounting stress hold your business back. Reach out today and let's solve it together.
@@ -394,7 +396,7 @@ export default function ContactPage() {
         <motion.a
           variants={leftCard}
           href="tel:08080913334"
-          className="inline-flex items-center justify-center gap-2 bg-blue-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-lg"
+          className="inline-flex items-center justify-center gap-2 bg-blue-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-all shadow-lg"
         >
           <Phone className="w-5 h-5" />
           Call Us

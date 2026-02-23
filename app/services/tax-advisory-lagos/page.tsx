@@ -127,14 +127,14 @@ export default function TaxAdvisoryPage() {
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
           <Link
             href="/services"
-            className="inline-flex items-center gap-2 text-blue-400 font-semibold hover:text-blue-800 mb-6"
+            className="inline-flex items-center gap-2 text-blue-400 font-semibold hover:text-blue-600 mb-6"
           >
             <ArrowRight className="w-4 h-4 rotate-180" />
             Back to Services
           </Link>
 
           <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Expert <span className="text-blue-900">Tax Advisory & Filing</span> for Nigerian Businesses
+            Expert <span className="text-blue-900">Tax Advisory</span> &  <span className="text-blue-900">Filing</span> for Nigerian Businesses
           </h1>
 
           <p className="text-xl text-gray-200 mb-10 leading-relaxed">
@@ -145,14 +145,14 @@ export default function TaxAdvisoryPage() {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
               href="/services"
-              className="inline-flex items-center gap-2 bg-blue-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-lg"
+              className="inline-flex items-center gap-2 bg-blue-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-all shadow-lg"
             >
               View Services
             </Link>
 
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold border-2 border-blue-900 hover:bg-purple-100 transition-all"
+              className="inline-flex items-center gap-2 bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold border-2 border-blue-900 hover:bg-blue-100 transition-all"
             >
               Get Started
             </Link>
@@ -178,7 +178,7 @@ export default function TaxAdvisoryPage() {
               const Icon = feature.icon;
               return (
                 <div key={index} className="text-center">
-                  <div className="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
                     <Icon className="w-8 h-8 text-blue-900" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Phone, Mail, MapPin } from "lucide-react";
 import Container from "../ui/Container";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -11,9 +12,14 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-blue-900 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">P</span>
-              </div>
+               <Image
+                src="/logo-image.png"
+                alt="Praestantia Consulting Ltd"
+                width={40}
+                height={40}
+                priority
+              />
+              
               <div>
                 <div className="font-semibold text-white">Praestantia</div>
                 <div className="text-xs text-gray-400">Consulting limited</div>

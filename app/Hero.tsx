@@ -36,7 +36,7 @@ export default function Hero() {
             </motion.div>
             <motion.div variants={heroHeaderIn} initial="hidden" animate="show" transition={{ delay: 0.2 }}>
               <p className="mt-6 text-xl text-stone-50 leading-relaxed max-w-6xl mx-auto">
-               At Praestantia, we help businesses put structure and clarity into their finance and operations from payroll management to tax advisory
+               At Praestantia, we help businesses put structure and clarity into their finance operations.
               </p>
             </motion.div>
              <motion.div variants={heroHeaderIn} initial="hidden" animate="show" transition={{ delay: 0.4 }}>
@@ -45,7 +45,7 @@ export default function Hero() {
                 View services
               </Link>
               <Link href="/contact"
-                className="rounded-md  bg-white px-5 py-4 lg:px-8 lg:py-4 text-sm font-semibold text-blue-900 hover:bg-purple-100 transition-colors">
+                className="rounded-md  bg-white px-5 py-4 lg:px-8 lg:py-4 text-sm font-semibold text-blue-900 hover:bg-blue-100 transition-colors">
                 Get started
               </Link>
             </div>

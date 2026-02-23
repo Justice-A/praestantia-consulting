@@ -135,7 +135,7 @@ export default function BookkeepingPage() {
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
           <Link
             href="/services"
-            className="inline-flex items-center gap-2 text-blue-800 font-semibold hover:text-blue-400 mb-6"
+            className="inline-flex items-center gap-2 text-blue-400 font-semibold hover:text-blue-600 mb-6"
           >
             <ArrowRight className="w-4 h-4 rotate-180" />
             Back to Services
@@ -153,14 +153,14 @@ export default function BookkeepingPage() {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
               href="/services"
-              className="inline-flex items-center gap-2 bg-blue-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-lg"
+              className="inline-flex items-center gap-2 bg-blue-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-all shadow-lg"
             >
               View Services
             </Link>
 
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold border-2 border-blue-900 hover:bg-purple-100 transition-all"
+              className="inline-flex items-center gap-2 bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold border-2 border-blue-900 hover:bg-blue-100 transition-all"
             >
               Get Started
             </Link>
@@ -182,7 +182,7 @@ export default function BookkeepingPage() {
               const Icon = feature.icon;
               return (
                 <div key={index} className="text-center bg-gray-50 p-6 rounded-3xl">
-                  <div className="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
                     <Icon className="w-8 h-8 text-blue-900" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">
@@ -213,7 +213,7 @@ export default function BookkeepingPage() {
               const Icon = item.icon;
               return (
                 <div key={index} className="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow">
-                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                     <Icon className="w-6 h-6 text-blue-900" />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">

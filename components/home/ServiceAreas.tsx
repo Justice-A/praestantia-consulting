@@ -17,7 +17,7 @@ export default function ServiceAreas() {
       icon: MapPin,
       title: "Main Office",
       description: "Behind Davitech Oil, Lekki Epe Expressway, Lagos",
-      bgColor: "bg-purple-100",
+      bgColor: "bg-blue-100",
       textColor: "text-blue-900",
     },
     {
@@ -59,7 +59,7 @@ export default function ServiceAreas() {
               <motion.div
                 key={index}
                 variants={fadeIn}
-                className="bg-white p-8 rounded-lg border border-gray-200 hover:shadow-lg transition-all hover:border-purple-200"
+                className="bg-white p-8 rounded-lg border border-gray-200 hover:shadow-lg transition-all hover:border-blue-200"
               >
                 <div className="flex items-start gap-4">
                   <div className={`w-12 h-12 ${area.bgColor} rounded-lg flex items-center justify-center flex-shrink-0`}>

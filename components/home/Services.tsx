@@ -126,7 +126,7 @@ export default function Services() {
         <div className="text-center mt-16">
           <Link
             href="/services"
-            className="inline-flex items-center gap-2 bg-blue-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-lg hover:shadow-xl"
+            className="inline-flex items-center gap-2 bg-blue-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl"
           >
             View All Services
             <ArrowRight className="w-5 h-5" />
