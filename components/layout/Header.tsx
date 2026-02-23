@@ -20,22 +20,24 @@ export default function Header() {
       <div className="mx-auto px-6 lg:px-8 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center ">
-            <div className="w-10 h-10 rounded-lg flex items-center justify-center">
-              <Image
-                src="/logo.svg.svg"
-                alt="Praestantia Consulting Ltd"
-                width={200}
-                height={50}
-                priority
-              />
-            </div>
-            <div>
-              <div className="font-semibold text-sm text-gray-900">Praestantia</div>
-              <div className="text-sm text-gray-600">Consulting limited</div>
+          <Link href="/" className="flex items-center gap-2">
+            <Image
+              src="/logo.svg.svg"
+              alt="Praestantia Consulting Ltd"
+              width={40}
+              height={40}
+              priority
+            />
+
+            <div className="flex flex-col justify-center leading-tight">
+              <span className="font-semibold text-sm text-gray-900">
+                Praestantia
+              </span>
+              <span className="text-sm text-gray-600">
+                Consulting Limited
+              </span>
             </div>
           </Link>
-
           {/* Desktop Navigation */}
           <div className="hidden md:flex gap-8 items-center">
             <Link href="/" className="text-gray-700 hover:text-blue-900 transition-colors font-medium">
