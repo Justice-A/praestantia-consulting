@@ -45,7 +45,7 @@ export default function Hero() {
                 View services
               </Link>
               <Link href="/contact"
-                className="rounded-md  bg-white  px-5 py-2 lg:px-8 lg:py-4 text-sm font-semibold text-blue-900 hover:bg-purple-100 transition-colors">
+                className="rounded-md  bg-white  px-5 py-3 lg:px-8 lg:py-4 text-sm font-semibold text-blue-900 hover:bg-purple-100 transition-colors">
                 Get started
               </Link>
             </div>
