@@ -48,7 +48,7 @@ export default function Services() {
     {
       title: "Bookkeeping & Compliance",
       slug: "bookkeeping-services-lagos",
-      description: "Monthly financial reports and ongoing compliance support to keep your finances organized. Bank reconciliation, transaction recording, and tax-ready reporting year-round.",
+      description: "Monthly financial reports and ongoing compliance support to keep your finances organized.",
       icon: BookOpen,
       iconBg: "bg-orange-500",
     },

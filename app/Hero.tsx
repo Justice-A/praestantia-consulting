@@ -36,7 +36,7 @@ export default function Hero() {
             </motion.div>
             <motion.div variants={heroHeaderIn} initial="hidden" animate="show" transition={{ delay: 0.2 }}>
               <p className="mt-6 text-xl text-stone-50 leading-relaxed max-w-6xl mx-auto">
-               At Praestantia, we help businesses put structure and clarity into their finance operations.
+               At Praestantia, we help businesses establish finance operational structure and strengthen accountability.
               </p>
             </motion.div>
              <motion.div variants={heroHeaderIn} initial="hidden" animate="show" transition={{ delay: 0.4 }}>

@@ -32,7 +32,7 @@ const fadeUpDelayed = {
 
 export default function NotableProjects() {
   const projects = [
-    "Designed NTA 2025 compliant payroll system for Lagos service company",
+    "Designed payroll system that is compliant with the Nigerian Tax Act (NTA 2025) for Lagos service company",
     "Built complete accounting department from scratch for tech startup",
     "Created costing and pricing templates for offshore cleaning services",
     "Set up chart of accounts for accounting software implementation"

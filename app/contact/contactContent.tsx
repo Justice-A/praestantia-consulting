@@ -64,7 +64,7 @@ export default function ContactPage() {
     {
       icon: MessageCircle,
       title: "WhatsApp",
-      secondary: "Fastest response time",
+      secondary: "Availabe 24/7",
       href: "https://wa.me/2348080913334",
       iconBg: "bg-green-100",
       iconColor: "text-green-600",
@@ -73,7 +73,6 @@ export default function ContactPage() {
     {
       icon: Mail,
       title: "Email",
-      primary: "praestantiaconsult@gmail.com",
       secondary: "We'll respond within 24 hours",
       href: "mailto:praestantiaconsult@gmail.com",
       iconBg: "bg-blue-100",
@@ -209,9 +208,6 @@ export default function ContactPage() {
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">
                     {method.title}
                   </h3>
-                  <p className="text-lg font-semibold text-gray-900 mb-2">
-                    {method.primary}
-                  </p>
                   <p className="text-gray-600 mb-6">
                     {method.secondary}
                   </p>

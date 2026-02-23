@@ -34,7 +34,7 @@ export default function CTA() {
               Ready to Get Your Finances Organized?
             </h2>
             <p className="text-xl text-gray-100 leading-relaxed">
-              Contact us today. Let's discuss how we can help your business stay tax-compliant and growth-ready.
+              Contact us today. Let's discuss how we can help your business start on the right path, stay tax-compliant and growth-ready.
             </p>
           </motion.div>
           <div className="flex flex-col sm:flex-row gap-4 shrink-0">

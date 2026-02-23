@@ -79,10 +79,10 @@ export default function AboutPage() {
   ];
 
   const whatWeDo = [
-    "Transition to compliant and well-structured payroll and tax systems",
+    "Transition to a well-structured payroll system",
     "Build reliable financial management and reporting processes",
     "Strengthen internal controls and operational accountability",
-    "Prepare for growth, regulatory review, or organisational change",
+    "Prepare for growth or organisational change",
   ];
 
   const whoWeServe = [
@@ -93,7 +93,7 @@ export default function AboutPage() {
     },
     {
       title: "Startups",
-      description: "Establishing foundational finance and payroll structures from day one",
+      description: "Establishing foundational finance with regulatory compliance from day one",
       icon: Target,
     },
     {
@@ -181,7 +181,7 @@ export default function AboutPage() {
             variants={fadeInUp}
           >
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 ">
-              Learn about Us
+              Learn About Us
             <span className="block w-24 h-1 bg-blue-800 mx-auto mt-3"></span>
             </h2>
           </motion.div>
@@ -202,7 +202,7 @@ export default function AboutPage() {
             </motion.p>
 
             <motion.p variants={fadeInUp}>
-              Praestantia partners with businesses to put those structures in place—establishing practical financial frameworks, strengthening accountability, and aligning operations with regulatory and reporting requirements.
+              Praestantia partners with businesses to put the right structures in place—establishing practical financial frameworks, strengthening accountability, and aligning operations with regulatory and reporting requirements.
             </motion.p>
 
             <motion.p
@@ -316,18 +316,6 @@ export default function AboutPage() {
                   To move businesses from managing finances reactively to operating with structure that supports sustainable growth.
                 </p>
               </div>
-
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-white rounded-xl p-4 text-center shadow-lg">
-                  <div className="text-3xl font-bold text-blue-900">10+</div>
-                  <div className="text-sm text-gray-600">Businesses Served</div>
-                </div>
-
-                <div className="bg-white rounded-xl p-4 text-center shadow-lg">
-                  <div className="text-3xl font-bold text-blue-900">100%</div>
-                  <div className="text-sm text-gray-600">Compliance Rate</div>
-                </div>
-              </div>
             </motion.div>
           </div>
         </div>
@@ -365,7 +353,7 @@ export default function AboutPage() {
                 className="bg-white rounded-xl p-8 shadow-lg relative hover:shadow-xl transition-shadow"
                 variants={scaleIn}
               >
-                <div className="text-6xl font-bold text-blue-200 absolute top-4 right-4">
+                <div className="text-6xl font-bold text-blue-400 absolute top-4 right-4">
                   {step.number}
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4 relative z-10">
@@ -395,7 +383,7 @@ export default function AboutPage() {
               <span className="block w-24 h-1 bg-blue-800 mx-auto mt-3"></span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Praestantia works with individuals, startups, and small to medium-sized organisations seeking to operate with greater clarity, confidence, and control.
+              Praestantia works with individuals, startups, and small to medium-sized organisations.
             </p>
           </motion.div>
 
@@ -445,49 +433,56 @@ export default function AboutPage() {
               <span className="block w-24 h-1 bg-blue-800 mx-auto mt-3"></span>
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-              Praestantia is committed to clarity, professionalism, confidentiality, and practical execution—delivering solutions that support both immediate needs and future growth.
+              Praestantia is committed to professionalism, integrity, and excellence
             </p>
           </motion.div>
 
-          <motion.div
-            className="grid md:grid-cols-4 gap-6"
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-          >
-            <motion.div
-              className="bg-gray-50 rounded-xl p-6 border-l-4 border-blue-900"
-              variants={scaleIn}
-            >
-              <h3 className="font-bold text-xl text-gray-900 mb-2">Clarity</h3>
-              <p className="text-gray-600 text-sm">Transparent communication and straightforward solutions</p>
-            </motion.div>
-            
-            <motion.div
-              className="bg-gray-50 rounded-xl p-6 border-l-4 border-blue-900"
-              variants={scaleIn}
-            >
-              <h3 className="font-bold text-xl text-gray-900 mb-2">Professionalism</h3>
-              <p className="text-gray-600 text-sm">Highest standards in every engagement</p>
-            </motion.div>
-            
-            <motion.div
-              className="bg-gray-50 rounded-xl p-6 border-l-4 border-blue-900"
-              variants={scaleIn}
-            >
-              <h3 className="font-bold text-xl text-gray-900 mb-2">Confidentiality</h3>
-              <p className="text-gray-600 text-sm">Your business information is protected</p>
-            </motion.div>
-            
-            <motion.div
-              className="bg-gray-50 rounded-xl p-6 border-l-4 border-blue-900"
-              variants={scaleIn}
-            >
-              <h3 className="font-bold text-xl text-gray-900 mb-2">Execution</h3>
-              <p className="text-gray-600 text-sm">Practical implementation, not just advice</p>
-            </motion.div>
-          </motion.div>
+        <motion.div
+  className="grid md:grid-cols-3 gap-6"
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: true }}
+  variants={staggerContainer}
+>
+  {/* Professionalism */}
+  <motion.div
+    className="bg-gray-50 rounded-xl p-6 border-l-4 border-blue-900"
+    variants={scaleIn}
+  >
+    <h3 className="font-bold text-xl text-gray-900 mb-2">
+      Professionalism
+    </h3>
+    <p className="text-gray-600 text-sm">
+      Delivering high standards, discipline, and expertise in every engagement.
+    </p>
+  </motion.div>
+
+  {/* Integrity */}
+  <motion.div
+    className="bg-gray-50 rounded-xl p-6 border-l-4 border-blue-900"
+    variants={scaleIn}
+  >
+    <h3 className="font-bold text-xl text-gray-900 mb-2">
+      Integrity
+    </h3>
+    <p className="text-gray-600 text-sm">
+      Honest advice, ethical conduct, and decisions guided by principle.
+    </p>
+  </motion.div>
+
+  {/* Excellence */}
+  <motion.div
+    className="bg-gray-50 rounded-xl p-6 border-l-4 border-blue-900"
+    variants={scaleIn}
+  >
+    <h3 className="font-bold text-xl text-gray-900 mb-2">
+      Excellence
+    </h3>
+    <p className="text-gray-600 text-sm">
+      A relentless commitment to quality service extraordinaire.
+    </p>
+  </motion.div>
+</motion.div>
         </div>
       </section>
       <CTA />
