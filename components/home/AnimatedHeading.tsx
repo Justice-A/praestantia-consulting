@@ -19,7 +19,7 @@ export default function AnimatedHeading({ title, subtitle }: Props) {
         
       >
         {title}
-        <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
+        <span className="block w-24 h-1 bg-blue-800 mx-auto mt-3"></span>
       </motion.h2>
 
       {subtitle && (

@@ -19,13 +19,16 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://praestantiaconsulting.com"),
+  metadataBase: new URL("https://praestantia-consulting.vercel.app"),
+
   title: {
     default: "Chartered Accountant in Lagos | Praestantia Consulting",
     template: "%s | Praestantia Consulting",
   },
+
   description:
     "Professional accounting services for Lagos businesses and startups. 25 years experience in tax advisory, payroll, bookkeeping, and compliance. ICAN & CITN certified.",
+
   keywords: [
     "chartered accountant Lagos",
     "accounting firm Lagos",
@@ -36,11 +39,19 @@ export const metadata: Metadata = {
     "VAT filing Nigeria",
     "ICAN accountant",
   ],
+
   authors: [{ name: "Praestantia Consulting Limited" }],
+
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
+
   openGraph: {
     type: "website",
     locale: "en_NG",
-    url: "https://praestantiaconsulting.com",
+    url: "https://praestantia-consulting.vercel.app",
     siteName: "Praestantia Consulting",
     title: "Chartered Accountant in Lagos | Praestantia Consulting",
     description:
@@ -54,6 +65,7 @@ export const metadata: Metadata = {
       },
     ],
   },
+
   twitter: {
     card: "summary_large_image",
     title: "Chartered Accountant in Lagos | Praestantia Consulting",
@@ -61,6 +73,7 @@ export const metadata: Metadata = {
       "Professional accounting services for Lagos businesses and startups.",
     images: ["/accountant-og-image.jpg"],
   },
+
   robots: {
     index: true,
     follow: true,
@@ -73,7 +86,6 @@ export const metadata: Metadata = {
     },
   },
 };
-
 export default function RootLayout({
   children,
 }: {

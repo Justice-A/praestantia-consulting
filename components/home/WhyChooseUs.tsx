@@ -65,7 +65,7 @@
 //           >
 //             <h3 className="text-3xl font-bold text-gray-900 mb-4">
 //               Why Choose Us?
-//               <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
+//               <span className="block w-24 h-1 bg-blue-800 mx-auto mt-3"></span>
 //             </h3>
 //             <p className="text-2xl text-gray-600 mx-auto">
 //               Professional expertise backed by real credentials
@@ -86,7 +86,7 @@
 //               className="bg-gray-50 p-8 md:p-4 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow"
 //             >
 //               <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-//                 <Award className="w-6 h-6 text-purple-600" />
+//                 <Award className="w-6 h-6 text-blue-900" />
 //               </div>
 //               <p className="text-2xl text-gray-900 mb-2">
 //                 25+ Years Experience
@@ -102,7 +102,7 @@
 //               className="bg-gray-50 p-8 md:p-4 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow"
 //             >
 //               <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-//                 <CheckCircle className="w-6 h-6 text-purple-600" />
+//                 <CheckCircle className="w-6 h-6 text-blue-900" />
 //               </div>
 //               <p className="text-2xl text-gray-900 mb-2">
 //                 ICAN & CITN Certified
@@ -118,7 +118,7 @@
 //               className="bg-gray-50 p-8 md:p-4 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow"
 //             >
 //               <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-//                 <Users className="w-6 h-6 text-purple-600" />
+//                 <Users className="w-6 h-6 text-blue-900" />
 //               </div>
 //               <p className="text-2xl text-gray-900 mb-2">
 //                 Startup & SME Specialists
@@ -134,7 +134,7 @@
 //               className="bg-gray-50 p-8 md:p-4 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow"
 //             >
 //               <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-//                 <TrendingUp className="w-6 h-6 text-purple-600" />
+//                 <TrendingUp className="w-6 h-6 text-blue-900" />
 //               </div>
 //               <p className="text-2xl text-gray-900 mb-2">
 //                 Serving Nigeria & Beyond

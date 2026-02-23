@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-purple-600 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-blue-900 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-xl">P</span>
               </div>
               <div>
@@ -29,22 +29,22 @@ export default function Footer() {
             <h4 className="font-semibold text-white mb-4">Services</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/services/payroll-management-lagos" className="hover:text-purple-400 transition-colors">
+                <Link href="/services/payroll-management-lagos" className="hover:text-blue-400 transition-colors">
                   Payroll Management
                 </Link>
               </li>
               <li>
-                <Link href="/services/tax-advisory-lagos" className="hover:text-purple-400 transition-colors">
+                <Link href="/services/tax-advisory-lagos" className="hover:text-blue-400 transition-colors">
                   Tax Advisory
                 </Link>
               </li>
               <li>
-                <Link href="/services/accounting-system-setup" className="hover:text-purple-400 transition-colors">
+                <Link href="/services/accounting-system-setup" className="hover:text-blue-400 transition-colors">
                   Accounting Systems
                 </Link>
               </li>
               <li>
-                <Link href="/services/bookkeeping-services-lagos" className="hover:text-purple-400 transition-colors">
+                <Link href="/services/bookkeeping-services-lagos" className="hover:text-blue-400 transition-colors">
                   Bookkeeping
                 </Link>
               </li>
@@ -56,22 +56,22 @@ export default function Footer() {
             <h4 className="font-semibold text-white mb-4">Company</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/about" className="hover:text-purple-400 transition-colors">
+                <Link href="/about" className="hover:text-blue-400 transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/case-studies" className="hover:text-purple-400 transition-colors">
+                <Link href="/case-studies" className="hover:text-blue-400 transition-colors">
                   Case Studies
                 </Link>
               </li>
               <li>
-                <Link href="/faq" className="hover:text-purple-400 transition-colors">
+                <Link href="/faq" className="hover:text-blue-400 transition-colors">
                   FAQ
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-purple-400 transition-colors">
+                <Link href="/contact" className="hover:text-blue-400 transition-colors">
                   Contact
                 </Link>
               </li>
@@ -83,22 +83,22 @@ export default function Footer() {
             <h4 className="font-semibold text-white mb-4">Contact</h4>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
-                <Phone className="w-4 h-4 mt-0.5 text-purple-400 flex-shrink-0" />
-                <a href="tel:08080913334" className="hover:text-purple-400 transition-colors">
+                <Phone className="w-4 h-4 mt-0.5 text-blue-400 flex-shrink-0" />
+                <a href="tel:08080913334" className="hover:text-blue-400 transition-colors">
                   08080913334
                 </a>
               </li>
               <li className="flex items-start gap-2">
-                <Mail className="w-4 h-4 mt-0.5 text-purple-400 flex-shrink-0" />
+                <Mail className="w-4 h-4 mt-0.5 text-blue-400 flex-shrink-0" />
                 <a 
                   href="mailto:praestantiaconsult@gmail.com" 
-                  className="hover:text-purple-400 transition-colors break-all"
+                  className="hover:text-blue-400 transition-colors break-all"
                 >
                   praestantiaconsult@gmail.com
                 </a>
               </li>
               {/* <li className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 mt-0.5 text-purple-400 flex-shrink-0" />
+                <MapPin className="w-4 h-4 mt-0.5 text-blue-400 flex-shrink-0" />
                 <span className="leading-relaxed">
                   Behind Davitech Oil, Lekki Epe Expressway, Lagos
                 </span>
@@ -113,10 +113,10 @@ export default function Footer() {
             © {new Date().getFullYear()} Praestantia Consulting Limited. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm">
-            <Link href="/privacy" className="hover:text-purple-400 transition-colors">
+            <Link href="/privacy" className="hover:text-blue-400 transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="hover:text-purple-400 transition-colors">
+            <Link href="/terms" className="hover:text-blue-400 transition-colors">
               Terms of Service
             </Link>
           </div>

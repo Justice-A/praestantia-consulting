@@ -46,7 +46,7 @@ export default function About() {
           >
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
               About Us
-              <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
+              <span className="block w-24 h-1 bg-blue-800 mx-auto mt-3"></span>
             </h2>
           </motion.div>
 

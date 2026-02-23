@@ -135,14 +135,14 @@ export default function BookkeepingPage() {
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
           <Link
             href="/services"
-            className="inline-flex items-center gap-2 text-purple-300 font-semibold hover:text-purple-400 mb-6"
+            className="inline-flex items-center gap-2 text-blue-800 font-semibold hover:text-blue-400 mb-6"
           >
             <ArrowRight className="w-4 h-4 rotate-180" />
             Back to Services
           </Link>
 
           <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Professional <span className="text-purple-600"> Bookkeeping</span> for Nigerian Businesses
+            Professional <span className="text-blue-900"> Bookkeeping</span> for Nigerian Businesses
           </h1>
 
           <p className="text-xl text-gray-200 mb-10 leading-relaxed">
@@ -153,14 +153,14 @@ export default function BookkeepingPage() {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
               href="/services"
-              className="inline-flex items-center gap-2 bg-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-lg"
+              className="inline-flex items-center gap-2 bg-blue-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-lg"
             >
               View Services
             </Link>
 
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold border-2 border-purple-600 hover:bg-purple-100 transition-all"
+              className="inline-flex items-center gap-2 bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold border-2 border-blue-900 hover:bg-purple-100 transition-all"
             >
               Get Started
             </Link>
@@ -173,7 +173,7 @@ export default function BookkeepingPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl  font-bold text-gray-900 mb-4">
               What Makes Our Bookkeeping Different
-              <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
+              <span className="block w-24 h-1 bg-blue-800 mx-auto mt-3"></span>
             </h2>
           </div>
 
@@ -183,7 +183,7 @@ export default function BookkeepingPage() {
               return (
                 <div key={index} className="text-center bg-gray-50 p-6 rounded-3xl">
                   <div className="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                    <Icon className="w-8 h-8 text-purple-600" />
+                    <Icon className="w-8 h-8 text-blue-900" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">
                     {feature.title}
@@ -204,7 +204,7 @@ export default function BookkeepingPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
               Perfect For
-               <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
+               <span className="block w-24 h-1 bg-blue-800 mx-auto mt-3"></span>
             </h2>
           </div>
 
@@ -214,7 +214,7 @@ export default function BookkeepingPage() {
               return (
                 <div key={index} className="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow">
                   <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                    <Icon className="w-6 h-6 text-purple-600" />
+                    <Icon className="w-6 h-6 text-blue-900" />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">
                     {item.title}
@@ -237,7 +237,7 @@ export default function BookkeepingPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
               Common Questions
-               <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
+               <span className="block w-24 h-1 bg-blue-800 mx-auto mt-3"></span>
             </h2>
           </div>
 

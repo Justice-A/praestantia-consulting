@@ -77,7 +77,7 @@ export default function ContactPage() {
       secondary: "We'll respond within 24 hours",
       href: "mailto:praestantiaconsult@gmail.com",
       iconBg: "bg-purple-100",
-      iconColor: "text-purple-600",
+      iconColor: "text-blue-900",
       cta: "Send Email",
     },
   ];
@@ -141,7 +141,7 @@ export default function ContactPage() {
               transition={{ delay: 0.2 }}
             >
               <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-                Let’s Talk About Your <span className="text-purple-500">Business Finances</span>
+                Let’s Talk About Your <span className="text-blue-800">Business Finances</span>
               </h1>
             </motion.div>
 
@@ -162,7 +162,7 @@ export default function ContactPage() {
             >
               <motion.a
                 href="https://wa.me/2348080913334"
-                className="inline-flex items-center justify-center bg-purple-600 text-white px-8 py-4 gap-2 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-md"
+                className="inline-flex items-center justify-center bg-blue-900 text-white px-8 py-4 gap-2 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-md"
               >
                 <MessageCircle className="w-5 h-5" />
                 WhatsApp
@@ -170,7 +170,7 @@ export default function ContactPage() {
 
               <motion.a
                  href="tel:08080913334"
-                className="inline-flex items-center justify-center bg-white text-purple-600 px-8 py-4 gap-2 rounded-lg font-semibold border-2 border-white hover:bg-gray-100 transition-all"
+                className="inline-flex items-center justify-center bg-white text-blue-900 px-8 py-4 gap-2 rounded-lg font-semibold border-2 border-white hover:bg-gray-100 transition-all"
               >
                 <Phone className="w-5 h-5" /> 
                 Call Us
@@ -189,7 +189,7 @@ export default function ContactPage() {
           >
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
               Choose Your Preferred Contact Method
-              <span className="block w-16 h-1 bg-purple-500 mx-auto mt-3"></span>
+              <span className="block w-16 h-1 bg-blue-800 mx-auto mt-3"></span>
             </h2>
             <p className="text-xl text-gray-600">
               We're available through multiple channels for your convenience
@@ -202,7 +202,7 @@ export default function ContactPage() {
             {contactMethods.map((method, index) => {
               const Icon = method.icon;
               return (
-                <div key={index} className="bg-white rounded-2xl p-8 shadow-lg border-2 border-gray-200 hover:border-purple-300 transition-all text-center">
+                <div key={index} className="bg-white rounded-2xl p-8 shadow-lg border-2 border-gray-200 hover:border-blue-800 transition-all text-center">
                   <div className={`w-20 h-20 ${method.iconBg} rounded-2xl flex items-center justify-center mx-auto mb-6`}>
                     <Icon className={`w-10 h-10 ${method.iconColor}`} />
                   </div>
@@ -217,7 +217,7 @@ export default function ContactPage() {
                   </p>
                   <a
                     href={method.href}
-                    className="inline-flex items-center justify-center gap-2 bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-all w-full"
+                    className="inline-flex items-center justify-center gap-2 bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-all w-full"
                   >
                     {method.cta}
                   </a>
@@ -240,7 +240,7 @@ export default function ContactPage() {
           >
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Serving Businesses Across Nigeria
-              <span className="block w-16 h-1 bg-purple-500 mx-auto mt-3"></span>
+              <span className="block w-16 h-1 bg-blue-800 mx-auto mt-3"></span>
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
               While our main office is in Lagos, we work with clients nationwide through secure remote collaboration. From Abuja to Port Harcourt, from Kano to Ibadan, if you need professional accounting services, we're here to help.
@@ -394,7 +394,7 @@ export default function ContactPage() {
         <motion.a
           variants={leftCard}
           href="tel:08080913334"
-          className="inline-flex items-center justify-center gap-2 bg-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-lg"
+          className="inline-flex items-center justify-center gap-2 bg-blue-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-lg"
         >
           <Phone className="w-5 h-5" />
           Call Us
@@ -403,7 +403,7 @@ export default function ContactPage() {
         <motion.a
           variants={rightCard}
           href="https://wa.me/2348080913334"
-          className="inline-flex items-center justify-center gap-2 border-2 text-purple-600 px-8 py-4 rounded-lg font-semibold hover:bg-green-700 transition-all shadow-lg"
+          className="inline-flex items-center justify-center gap-2 border-2 text-blue-900 px-8 py-4 rounded-lg font-semibold hover:bg-green-700 transition-all shadow-lg"
         >
           <MessageCircle className="w-5 h-5" />
           WhatsApp Us

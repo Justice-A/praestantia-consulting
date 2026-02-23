@@ -50,7 +50,7 @@ export default function NotableProjects() {
         >
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
             Recent Client Wins
-            <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
+            <span className="block w-24 h-1 bg-blue-800 mx-auto mt-3"></span>
           </h2>
           <p className="text-2xl text-gray-600  mx-auto">
             Real results for real businesses
@@ -70,7 +70,7 @@ export default function NotableProjects() {
               <div className="flex items-start gap-4">
                 <div className="shrink-0">
                   <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
-                    <CheckCircle className="w-6 h-6 text-purple-600" />
+                    <CheckCircle className="w-6 h-6 text-blue-900" />
                   </div>
                 </div>
                 <p className="text-gray-700 leading-relaxed">

@@ -36,7 +36,7 @@ export default function Services() {
       slug: "tax-advisory-lagos",
       description: "VAT returns, income tax, and annual returns filed accurately and on time. Expert tax planning and optimization strategies to minimize liabilities while staying compliant.",
       icon: FileText,
-      iconBg: "bg-purple-500",
+      iconBg: "bg-blue-800",
     },
     {
       title: "Accounting System Design",
@@ -67,7 +67,7 @@ export default function Services() {
         >
           <h3 className="text-3xl  font-bold text-gray-900 mb-4">
             How We Help Lagos Businesses
-            <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
+            <span className="block w-24 h-1 bg-blue-800 mx-auto mt-3"></span>
           </h3>
           <p className="text-lg text-gray-600 mx-auto">
             Comprehensive accounting services tailored for SMEs, startups, and individuals
@@ -101,7 +101,7 @@ export default function Services() {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-purple-600 transition-colors">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-900 transition-colors">
                     {service.title}
                   </h3>
 
@@ -111,7 +111,7 @@ export default function Services() {
                   </p>
 
                   {/* CTA at bottom */}
-                  <div className="flex items-center gap-2 text-purple-600 font-semibold group-hover:gap-3 transition-all mt-auto">
+                  <div className="flex items-center gap-2 text-blue-900 font-semibold group-hover:gap-3 transition-all mt-auto">
                     <span>Learn more</span>
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </div>
@@ -126,7 +126,7 @@ export default function Services() {
         <div className="text-center mt-16">
           <Link
             href="/services"
-            className="inline-flex items-center gap-2 bg-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-lg hover:shadow-xl"
+            className="inline-flex items-center gap-2 bg-blue-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-lg hover:shadow-xl"
           >
             View All Services
             <ArrowRight className="w-5 h-5" />

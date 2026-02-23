@@ -62,7 +62,7 @@ export default function FAQ() {
         >
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             Frequently Asked Questions
-            <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
+            <span className="block w-24 h-1 bg-blue-800 mx-auto mt-3"></span>
           </h2>
           <p className="text-2xl text-gray-600">
             Quick answers to common questions about our accounting services
@@ -97,7 +97,7 @@ export default function FAQ() {
                   
                   {/* Plus/Minus Icon */}
                   <div className={`shrink-0 w-8 h-8 rounded-lg flex items-center justify-center transition-all ${
-                    isOpen ? 'bg-purple-600 rotate-180' : 'bg-gray-100'
+                    isOpen ? 'bg-blue-900 rotate-180' : 'bg-gray-100'
                   }`}>
                     {isOpen ? (
                       <Minus className="w-5 h-5 text-white" />

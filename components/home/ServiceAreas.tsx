@@ -18,7 +18,7 @@ export default function ServiceAreas() {
       title: "Main Office",
       description: "Behind Davitech Oil, Lekki Epe Expressway, Lagos",
       bgColor: "bg-purple-100",
-      textColor: "text-purple-600",
+      textColor: "text-blue-900",
     },
     {
       icon: Globe,
@@ -70,7 +70,7 @@ export default function ServiceAreas() {
                     {area.isPhone ? (
                       <a
                         href="tel:08080913334"
-                        className="text-sm text-gray-600 hover:text-purple-600 transition-colors"
+                        className="text-sm text-gray-600 hover:text-blue-900 transition-colors"
                       >
                         {area.description}
                       </a>

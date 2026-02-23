@@ -18,7 +18,7 @@ export default function ServicesPage() {
       description:
         "NTA 2025 compliant payroll systems designed for Lagos SMEs and startups. Automated tax calculations, monthly payslip generation, and full compliance.",
       icon: Users,
-      iconBg: "bg-purple-500",
+      iconBg: "bg-blue-800",
     },
     {
       title: "Tax Advisory & Filing",
@@ -26,7 +26,7 @@ export default function ServicesPage() {
       description:
         "Expert tax planning and filing services for businesses and individuals. VAT returns, income tax, and annual returns filed accurately and on time.",
       icon: FileText,
-      iconBg: "bg-purple-500",
+      iconBg: "bg-blue-800",
     },
     {
       title: "Accounting System Design",
@@ -34,7 +34,7 @@ export default function ServicesPage() {
       description:
         "Custom chart of accounts and workflows built specifically for your business needs. Complete setup, integration, and staff training.",
       icon: Settings,
-      iconBg: "bg-purple-500",
+      iconBg: "bg-blue-800",
     },
     {
       title: "Bookkeeping & Compliance",
@@ -42,7 +42,7 @@ export default function ServicesPage() {
       description:
         "Monthly financial reports and ongoing compliance support. Keep your finances organized and tax-ready year-round.",
       icon: BookOpen,
-      iconBg: "bg-purple-500",
+      iconBg: "bg-blue-800",
     },
     {
       title: "Filing of Company Returns & Self Assessment",
@@ -50,7 +50,7 @@ export default function ServicesPage() {
       description:
         "Accurate and timely filing of company annual returns and self-assessment tax returns for businesses and individuals in Nigeria, ensuring full regulatory compliance and peace of mind.",
       icon: BookOpen,
-      iconBg: "bg-purple-500",
+      iconBg: "bg-blue-800",
     },
     {
       title: "Designing of Pricing Templates",
@@ -58,7 +58,7 @@ export default function ServicesPage() {
       description:
         "Custom pricing and costing templates designed to help SMEs and growing businesses in Nigeria set profitable prices, manage costs, and improve financial decision-making.",
       icon: BookOpen,
-      iconBg: "bg-purple-500",
+      iconBg: "bg-blue-800",
     },
     {
       title: "Recruitment & Training of Account Staff",
@@ -66,7 +66,7 @@ export default function ServicesPage() {
       description:
         "Professional recruitment and hands-on training of accounting personnel to ensure your finance team operates efficiently, accurately, and in compliance with Nigerian regulations.",
       icon: Users,
-      iconBg: "bg-purple-500",
+      iconBg: "bg-blue-800",
     },
     {
       title: "Monthly VAT Returns with FRS",
@@ -74,7 +74,7 @@ export default function ServicesPage() {
       description:
         "Preparation and filing of monthly VAT returns with the Nigerian Revenue Service (FRS), ensuring accurate reporting, timely submission, and full tax compliance.",
       icon: BookOpen,
-      iconBg: "bg-purple-500",
+      iconBg: "bg-blue-800",
     },
   ];
 
@@ -95,7 +95,7 @@ export default function ServicesPage() {
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
             Our Professional{" "}
-            <span className="text-purple-400">Accounting Services</span>
+            <span className="text-blue-800">Accounting Services</span>
           </h2>
 
           <p className="text-xl text-gray-200 leading-relaxed mb-10">
@@ -106,14 +106,14 @@ export default function ServicesPage() {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center bg-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-md"
+              className="inline-flex items-center justify-center bg-blue-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-md"
             >
               Explore Services
             </Link>
 
             <Link
               href="#services"
-              className="inline-flex items-center justify-center bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold  hover:bg-purple-100 transition-all"
+              className="inline-flex items-center justify-center bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold  hover:bg-purple-100 transition-all"
             >
               Get Started
             </Link>
@@ -155,7 +155,7 @@ export default function ServicesPage() {
                   {index < 4 && (
                     <Link
                       href={`/services/${service.slug}`}
-                      className="inline-flex items-center gap-2 text-purple-600 font-semibold hover:text-purple-700 transition-colors"
+                      className="inline-flex items-center gap-2 text-blue-900 font-semibold hover:text-purple-700 transition-colors"
                     >
                       Learn More
                       <ArrowRight className="w-4 h-4" />

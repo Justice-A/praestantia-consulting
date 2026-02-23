@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";
@@ -20,23 +20,29 @@ export default function Header() {
       <div className="mx-auto px-6 lg:px-8 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-purple-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">P</span>
+          <Link href="/" className="flex items-center ">
+            <div className="w-10 h-10 rounded-lg flex items-center justify-center">
+              <Image
+                src="/logo.svg.svg"
+                alt="Praestantia Consulting Ltd"
+                width={200}
+                height={50}
+                priority
+              />
             </div>
             <div>
-              <div className="font-semibold text-lg text-gray-900">Praestantia</div>
-              <div className="text-xs text-gray-600">Consulting limited</div>
+              <div className="font-semibold text-sm text-gray-900">Praestantia</div>
+              <div className="text-sm text-gray-600">Consulting limited</div>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex gap-8 items-center">
-            <Link href="/" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">
+            <Link href="/" className="text-gray-700 hover:text-blue-900 transition-colors font-medium">
               Home
             </Link>
             
-            <Link href="/about" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">
+            <Link href="/about" className="text-gray-700 hover:text-blue-900 transition-colors font-medium">
               About
             </Link>
             {/* Services Dropdown */}
@@ -45,7 +51,7 @@ export default function Header() {
               onMouseEnter={() => setServicesDropdownOpen(true)}
               onMouseLeave={() => setServicesDropdownOpen(false)}
             >
-              <div className="flex items-center gap-1 text-gray-700  font-medium hover:text-purple-600 transition-colors">
+              <div className="flex items-center gap-1 text-gray-700  font-medium hover:text-blue-900 transition-colors">
                  <Link
                       href="/services"
                      
@@ -62,7 +68,7 @@ export default function Header() {
                     <Link
                       key={index}
                       href={service.href}
-                      className="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600 transition-colors font-medium"
+                      className="block px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-blue-900 transition-colors font-medium"
                     >
                       {service.name}
                     </Link>
@@ -70,7 +76,7 @@ export default function Header() {
                   <div className="border-t border-gray-200 mt-2 pt-2">
                     <Link
                       href="/services"
-                      className="block px-4 py-3 text-purple-600  hover:bg-purple-50 transition-colors"
+                      className="block px-4 py-3 text-blue-900  hover:bg-purple-50 transition-colors"
                     >
                       View All Services →
                     </Link>
@@ -78,10 +84,10 @@ export default function Header() {
                 </div>
               )}
             </div>
-            {/* <Link href="/projects" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">
+            {/* <Link href="/projects" className="text-gray-700 hover:text-blue-900 transition-colors font-medium">
               Projects
             </Link> */}
-            <Link href="/contact" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">
+            <Link href="/contact" className="text-gray-700 hover:text-blue-900 transition-colors font-medium">
               Contact us
             </Link>
 
@@ -89,7 +95,7 @@ export default function Header() {
 
             <Link 
               href="/contact" 
-              className="bg-purple-600 text-white px-6 py-2.5 rounded-lg hover:bg-purple-700 transition-all"
+              className="bg-blue-900 text-white px-6 py-2.5 rounded-lg hover:bg-purple-700 transition-all"
             >
               Get started
             </Link>
@@ -116,14 +122,14 @@ export default function Header() {
           <div className="md:hidden pt-4 pb-2 space-y-2 border-t border-gray-200 mt-4">
             <Link
               href="/"
-              className="block py-2 text-gray-700 hover:text-purple-600 font-medium"
+              className="block py-2 text-gray-700 hover:text-blue-900 font-medium"
               onClick={() => setMobileMenuOpen(false)}
             >
               Home
             </Link>
                  <Link 
               href="/about" 
-              className="block py-2 text-gray-700 hover:text-purple-600 font-medium"
+              className="block py-2 text-gray-700 hover:text-blue-900 font-medium"
               onClick={() => setMobileMenuOpen(false)}
             >
               About
@@ -133,7 +139,7 @@ export default function Header() {
             <div>
               <button
                 onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
-                className="w-full flex items-center justify-between py-2 text-gray-700 hover:text-purple-600 font-medium"
+                className="w-full flex items-center justify-between py-2 text-gray-700 hover:text-blue-900 font-medium"
               >
                 Services
                 <ChevronDown className={`w-4 h-4 transition-transform ${servicesDropdownOpen ? 'rotate-180' : ''}`} />
@@ -145,7 +151,7 @@ export default function Header() {
                     <Link
                       key={index}
                       href={service.href}
-                      className="block py-2 text-sm text-gray-600 hover:text-purple-600"
+                      className="block py-2 text-sm text-gray-600 hover:text-blue-900"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {service.name}
@@ -153,7 +159,7 @@ export default function Header() {
                   ))}
                   <Link
                     href="/services"
-                    className="block py-2 text-sm text-purple-600 font-semibold"
+                    className="block py-2 text-sm text-blue-900 font-semibold"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     View All Services →
@@ -163,21 +169,21 @@ export default function Header() {
             </div>
             {/* <Link 
               href="/projects" 
-              className="block py-2 text-gray-700 hover:text-purple-600 font-medium"
+              className="block py-2 text-gray-700 hover:text-blue-900 font-medium"
               onClick={() => setMobileMenuOpen(false)}
             >
               Projects
             </Link> */}
             <Link 
               href="/contact" 
-              className="block py-2 text-gray-700 hover:text-purple-600 font-medium"
+              className="block py-2 text-gray-700 hover:text-blue-900 font-medium"
               onClick={() => setMobileMenuOpen(false)}
             >
               Contact us
             </Link>
             <Link 
               href="/contact" 
-              className="block py-2 text-purple-600 font-semibold border-t border-gray-200 mt-2 pt-4"
+              className="block py-2 text-blue-900 font-semibold border-t border-gray-200 mt-2 pt-4"
               onClick={() => setMobileMenuOpen(false)}
             >
               Get started

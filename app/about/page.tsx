@@ -136,7 +136,7 @@ export default function AboutPage() {
             >
               About{" "}
               
-              <span className="text-purple-400">Praestantia Consulting</span>{" "}
+              <span className="text-blue-900">Praestantia Consulting</span>{" "}
               
             </motion.h1>
 
@@ -154,14 +154,14 @@ export default function AboutPage() {
             >
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center bg-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-md"
+                className="inline-flex items-center justify-center bg-blue-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-md"
               >
                 Explore Services
               </Link>
 
               <Link
                 href="/services"
-                className="inline-flex items-center justify-center bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold border-2 border-white hover:bg-gray-100 transition-all"
+                className="inline-flex items-center justify-center bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold border-2 border-white hover:bg-gray-100 transition-all"
               >
                 Get Started
               </Link>
@@ -182,7 +182,7 @@ export default function AboutPage() {
           >
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 ">
               Learn about Us
-            <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
+            <span className="block w-24 h-1 bg-blue-800 mx-auto mt-3"></span>
             </h2>
           </motion.div>
 
@@ -249,7 +249,7 @@ export default function AboutPage() {
                   variants={scaleIn}
                 >
                   <div className="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                    <Icon className="w-8 h-8 text-purple-600" />
+                    <Icon className="w-8 h-8 text-blue-900" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">
                     {credential.title}
@@ -294,7 +294,7 @@ export default function AboutPage() {
                     variants={fadeInUp}
                   >
                     <div className="flex-shrink-0 w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
-                      <CheckCircle className="w-5 h-5 text-purple-600" />
+                      <CheckCircle className="w-5 h-5 text-blue-900" />
                     </div>
                     <p className="text-gray-700 leading-relaxed">{item}</p>
                   </motion.div>
@@ -319,12 +319,12 @@ export default function AboutPage() {
 
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-white rounded-xl p-4 text-center shadow-lg">
-                  <div className="text-3xl font-bold text-purple-600">10+</div>
+                  <div className="text-3xl font-bold text-blue-900">10+</div>
                   <div className="text-sm text-gray-600">Businesses Served</div>
                 </div>
 
                 <div className="bg-white rounded-xl p-4 text-center shadow-lg">
-                  <div className="text-3xl font-bold text-purple-600">100%</div>
+                  <div className="text-3xl font-bold text-blue-900">100%</div>
                   <div className="text-sm text-gray-600">Compliance Rate</div>
                 </div>
               </div>
@@ -345,7 +345,7 @@ export default function AboutPage() {
           >
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
               Our Approach
-              <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
+              <span className="block w-24 h-1 bg-blue-800 mx-auto mt-3"></span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Praestantia combines technical knowledge with implementation-focused support. The emphasis is not only on advising, but on ensuring that solutions are workable, understood, and embedded into daily operations.
@@ -392,7 +392,7 @@ export default function AboutPage() {
           >
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
               Who We Serve
-              <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
+              <span className="block w-24 h-1 bg-blue-800 mx-auto mt-3"></span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Praestantia works with individuals, startups, and small to medium-sized organisations seeking to operate with greater clarity, confidence, and control.
@@ -415,7 +415,7 @@ export default function AboutPage() {
                   variants={fadeInUp}
                 >
                   <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                    <Icon className="w-6 h-6 text-purple-600" />
+                    <Icon className="w-6 h-6 text-blue-900" />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">
                     {client.title}
@@ -442,7 +442,7 @@ export default function AboutPage() {
           >
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
               Our Commitment
-              <span className="block w-24 h-1 bg-purple-500 mx-auto mt-3"></span>
+              <span className="block w-24 h-1 bg-blue-800 mx-auto mt-3"></span>
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
               Praestantia is committed to clarity, professionalism, confidentiality, and practical execution—delivering solutions that support both immediate needs and future growth.
@@ -457,7 +457,7 @@ export default function AboutPage() {
             variants={staggerContainer}
           >
             <motion.div
-              className="bg-gray-50 rounded-xl p-6 border-l-4 border-purple-600"
+              className="bg-gray-50 rounded-xl p-6 border-l-4 border-blue-900"
               variants={scaleIn}
             >
               <h3 className="font-bold text-xl text-gray-900 mb-2">Clarity</h3>
@@ -465,7 +465,7 @@ export default function AboutPage() {
             </motion.div>
             
             <motion.div
-              className="bg-gray-50 rounded-xl p-6 border-l-4 border-purple-600"
+              className="bg-gray-50 rounded-xl p-6 border-l-4 border-blue-900"
               variants={scaleIn}
             >
               <h3 className="font-bold text-xl text-gray-900 mb-2">Professionalism</h3>
@@ -473,7 +473,7 @@ export default function AboutPage() {
             </motion.div>
             
             <motion.div
-              className="bg-gray-50 rounded-xl p-6 border-l-4 border-purple-600"
+              className="bg-gray-50 rounded-xl p-6 border-l-4 border-blue-900"
               variants={scaleIn}
             >
               <h3 className="font-bold text-xl text-gray-900 mb-2">Confidentiality</h3>
@@ -481,7 +481,7 @@ export default function AboutPage() {
             </motion.div>
             
             <motion.div
-              className="bg-gray-50 rounded-xl p-6 border-l-4 border-purple-600"
+              className="bg-gray-50 rounded-xl p-6 border-l-4 border-blue-900"
               variants={scaleIn}
             >
               <h3 className="font-bold text-xl text-gray-900 mb-2">Execution</h3>
