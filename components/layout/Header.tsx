@@ -153,7 +153,7 @@ export default function Header() {
                     <Link
                       key={index}
                       href={service.href}
-                      className="block py-2 text-sm text-gray-600 hover:text-blue-900"
+                      className="block py-2 text-sm text-gray-600 font-medium hover:text-blue-900"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {service.name}
