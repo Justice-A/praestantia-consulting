@@ -20,11 +20,11 @@ export default function Header() {
       <div className="mx-auto px-6 lg:px-8 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
+          <Link href="/" className="flex items-center ">
             <Image
-              src="/logo-image.png"
+              src="/praestantia-logo.png"
               alt="Praestantia Consulting Ltd"
-              width={40}
+              width={60}
               height={40}
               priority
             />

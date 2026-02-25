@@ -31,7 +31,7 @@ export default function Hero() {
           <div className="flex flex-col space-y-4">
             <motion.div variants={heroHeaderIn} initial="hidden" animate="show">
               <h1 className="text-4xl lg:text-5xl font-bold text-stone-50">
-               Practical <span className="text-blue-900">Finance</span> And <span className="text-blue-900">Accounting</span> Solutions 
+               Practical <span className="text-blue-800">Finance</span> And <span className="text-blue-800">Accounting</span> Solutions 
               </h1>
             </motion.div>
             <motion.div variants={heroHeaderIn} initial="hidden" animate="show" transition={{ delay: 0.2 }}>

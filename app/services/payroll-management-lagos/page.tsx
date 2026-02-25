@@ -3,6 +3,7 @@ import Link from "next/link";
 import { CheckCircle, ArrowRight, Users, Clock, Shield, TrendingUp } from "lucide-react";
 import Hero from "@/app/Hero";
 import CTA from "@/components/home/CTA";
+import AnimatedHeading from "@/components/home/AnimatedHeading";
 
 export const metadata = {
   title: "Payroll Management Services in Lagos | NTA 2025 Compliant",
@@ -104,7 +105,7 @@ export default function PayrollManagementPage() {
         </Link>
 
         <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-          NTA 2025 Compliant <span className="text-blue-900"> Payroll Management</span> for Nigerian Businesses
+          NTA 2025 Compliant <span className="text-blue-800"> Payroll Management</span> for Businesses
         </h1>
 
         <p className="text-xl text-gray-200 mb-10 leading-relaxed">
@@ -135,10 +136,9 @@ export default function PayrollManagementPage() {
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Why Our Payroll Service Stands Out
-              <span className="block w-24 h-1 bg-blue-800 mx-auto mt-3"></span>
-            </h2>
+             <AnimatedHeading 
+              title=" Why Our Payroll Service Stands Out"
+              />
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -165,15 +165,10 @@ export default function PayrollManagementPage() {
         {/* What's Included */}
       <section className="bg-gray-50 py-24">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            What's Included in Our Payroll Service
-            <span className="block w-24 h-1 bg-blue-800 mx-auto mt-3"></span>
-          </h2>
-
-          <p className="text-lg text-gray-600 mb-12">
-            Comprehensive payroll management from setup to ongoing support
-          </p>
+           <AnimatedHeading 
+            title="What's Included in Our Payroll Service"
+            subtitle="Comprehensive payroll management from setup to ongoing support"
+           />
           <div className="max-w-5xl mx-auto p-4">
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 justify-items-center">
               {whatWeInclude.map((item, index) => (
@@ -192,15 +187,11 @@ export default function PayrollManagementPage() {
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Who This Service Is For
-              <span className="block w-24 h-1 bg-blue-800 mx-auto mt-3"></span>
-            </h2>
-            <p className="text-lg text-gray-600">
-              Tailored solutions for different business types
-            </p>
+             <AnimatedHeading 
+              title="Who This Service Is For"
+              subtitle="Tailored solutions for different business types"
+              />
           </div>
-
           <div className="grid md:grid-cols-2 gap-8">
             {whoItsFor.map((item, index) => (
               <div key={index} className="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow">
@@ -220,10 +211,9 @@ export default function PayrollManagementPage() {
       <section className="bg-gray-50 py-24">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Frequently Asked Questions
-              <span className="block w-24 h-1 bg-blue-800 mx-auto mt-3"></span>
-            </h2>
+             <AnimatedHeading 
+              title="Frequently Asked Questions"
+              />
           </div>
 
           <div className="space-y-6">

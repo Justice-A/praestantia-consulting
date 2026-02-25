@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CheckCircle, ArrowRight, BookOpen, Clock, Shield, TrendingUp, FileCheck, Calendar } from "lucide-react";
 import Image from "next/image";
 import CTA from "@/components/home/CTA";
-
+import AnimatedHeading from "@/components/home/AnimatedHeading";
 export const metadata = {
   title: "Bookkeeping & Compliance Services for Nigerian Businesses",
   description: "Professional bookkeeping services for Nigerian SMEs and startups. Monthly financial reports, bank reconciliation, and compliance support. Lagos-based, serving clients nationwide.",
@@ -142,7 +142,7 @@ export default function BookkeepingPage() {
           </Link>
 
           <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Professional <span className="text-blue-900"> Bookkeeping</span> for Nigerian Businesses
+            Professional <span className="text-blue-800"> Bookkeeping</span> for Businesses
           </h1>
 
           <p className="text-xl text-gray-200 mb-10 leading-relaxed">
@@ -171,10 +171,9 @@ export default function BookkeepingPage() {
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl  font-bold text-gray-900 mb-4">
-              What Makes Our Bookkeeping Different
-              <span className="block w-24 h-1 bg-blue-800 mx-auto mt-3"></span>
-            </h2>
+             <AnimatedHeading 
+              title="What Makes Our Bookkeeping Different"
+              />
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -202,10 +201,9 @@ export default function BookkeepingPage() {
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Perfect For
-               <span className="block w-24 h-1 bg-blue-800 mx-auto mt-3"></span>
-            </h2>
+             <AnimatedHeading 
+              title="Perfect For"
+              />
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -235,10 +233,9 @@ export default function BookkeepingPage() {
       <section className="bg-white py-24">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Common Questions
-               <span className="block w-24 h-1 bg-blue-800 mx-auto mt-3"></span>
-            </h2>
+             <AnimatedHeading 
+              title="Common Questions"
+              />
           </div>
 
           <div className="space-y-6">

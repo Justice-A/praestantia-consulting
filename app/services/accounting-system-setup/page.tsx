@@ -3,6 +3,8 @@ import { CheckCircle, ArrowRight, Settings, Clock, Shield, TrendingUp, Layers, B
 import Hero from "@/app/Hero";
 import Image from "next/image";
 import CTA from "@/components/home/CTA"
+import AnimatedHeading from "@/components/home/AnimatedHeading";
+
 export const metadata = {
   title: "Accounting System Design & Setup for Nigerian Startups & SMEs",
   description: "Custom accounting systems for Nigerian businesses. Chart of accounts design, software setup, and staff training. Lagos-based, serving clients nationwide.",
@@ -89,7 +91,7 @@ export default function AccountingSystemPage() {
         </Link>
 
         <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-          Custom <span className="text-blue-900"> Accounting Systems</span> for Nigerian Startups & SMEs Payroll Management
+          Custom <span className="text-blue-800"> Accounting Systems</span> for Nigerian Startups & SMEs Payroll Management
         </h1>
 
         <p className="text-xl text-gray-200 mb-10 leading-relaxed">
@@ -119,15 +121,11 @@ export default function AccountingSystemPage() {
 
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Why Our Systems Work
-              <span className="block w-24 h-1 bg-blue-800 mx-auto mt-3"></span>
-            </h2>
-            <p className="text-lg text-gray-600">
-              Designed for Nigerian businesses, built to scale
-            </p>
-          </div>
+            <AnimatedHeading 
+            title="Why Our Systems Work" 
+            subtitle="Designed for Nigerian businesses, built to scale"
+            />          
+        </div>
 
         <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
         {features.map((feature, index) => {
@@ -148,21 +146,16 @@ export default function AccountingSystemPage() {
           );
         })}
       </div>
-
-        </div>
       </section>
 
       {/* What We Deliver */}
       <section className="bg-gray-50 py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Our Implementation Process
-              <span className="block w-24 h-1 bg-blue-800 mx-auto mt-3"></span>
-            </h2>
-            <p className="text-lg text-gray-600">
-              From discovery to go-live in 3-6 weeks
-            </p>
+            <AnimatedHeading 
+            title="Our Implementation Process"
+            subtitle="From discovery to go-live in 3-6 weeks"
+            />
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -186,10 +179,9 @@ export default function AccountingSystemPage() {
       <section className="bg-gray-50 py-24">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Common Questions
-              <span className="block w-24 h-1 bg-blue-800 mx-auto mt-3"></span>
-            </h2>
+             <AnimatedHeading 
+            title="Common Questions"
+            />
           </div>
 
           <div className="space-y-6">

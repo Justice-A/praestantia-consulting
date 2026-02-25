@@ -13,9 +13,9 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-4">
                <Image
-                src="/logo-image.png"
+                src="/praestantia-logo.png"
                 alt="Praestantia Consulting Ltd"
-                width={40}
+                width={60}
                 height={40}
                 priority
               />

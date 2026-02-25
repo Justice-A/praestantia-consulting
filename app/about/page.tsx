@@ -136,7 +136,7 @@ export default function AboutPage() {
             >
               About{" "}
               
-              <span className="text-blue-900">Praestantia Consulting</span>{" "}
+              <span className="text-blue-800">Praestantia Consulting</span>{" "}
               
             </motion.h1>
 

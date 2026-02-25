@@ -3,6 +3,7 @@ import Image from "next/image";
 import { CheckCircle, ArrowRight, FileText, Clock, Shield, TrendingUp, Calculator, Users } from "lucide-react";
 import Hero from "@/app/Hero";
 import CTA from "@/components/home/CTA";
+import AnimatedHeading from "@/components/home/AnimatedHeading";
 export const metadata = {
   title: "Tax Advisory & Filing Services in Nigeria | VAT, Income Tax, Annual Returns",
   description: "Expert tax planning and filing for Nigerian businesses. VAT returns, corporate tax, personal income tax, and annual returns. Lagos-based, serving clients nationwide.",
@@ -134,7 +135,7 @@ export default function TaxAdvisoryPage() {
           </Link>
 
           <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Expert <span className="text-blue-900">Tax Advisory</span> &  <span className="text-blue-900">Filing</span> for Nigerian Businesses
+            Expert <span className="text-blue-800">Tax Advisory</span> &  <span className="text-blue-900">Filing</span> for Businesses
           </h1>
 
           <p className="text-xl text-gray-200 mb-10 leading-relaxed">
@@ -164,13 +165,10 @@ export default function TaxAdvisoryPage() {
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Comprehensive Tax Services
-              <span className="block w-24 h-1 bg-blue-800 mx-auto mt-3"></span>
-            </h2>
-            <p className="text-lg text-gray-600">
-              Everything you need for tax compliance and optimization
-            </p>
+             <AnimatedHeading 
+              title="Comprehensive Tax Services"
+              subtitle="Everything you need for tax compliance and optimization"
+              />
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -198,13 +196,10 @@ export default function TaxAdvisoryPage() {
       <section className="bg-gray-50 py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl  font-bold text-gray-900 mb-4">
-              What We Cover
-              <span className="block w-24 h-1 bg-blue-800 mx-auto mt-3"></span>
-            </h2>
-            <p className="text-lg text-gray-600">
-              Full-spectrum tax services for Nigerian businesses
-            </p>
+             <AnimatedHeading 
+              title="What We Cover"
+              subtitle=" Full-spectrum tax services for Nigerian businesses"
+              />
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -231,13 +226,10 @@ export default function TaxAdvisoryPage() {
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl  font-bold text-gray-900 mb-4">
-              Who We Serve
-              <span className="block w-24 h-1 bg-blue-800 mx-auto mt-3"></span>
-            </h2>
-            <p className="text-lg text-gray-600">
-              Tax solutions for every business stage
-            </p>
+             <AnimatedHeading 
+              title="Who We Serve"
+              subtitle="Tax solutions for every business stage"
+              />
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -258,10 +250,9 @@ export default function TaxAdvisoryPage() {
       <section className="bg-gray-50 py-24">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Common Tax Questions
-              <span className="block w-24 h-1 bg-blue-800 mx-auto mt-3"></span>
-            </h2>
+             <AnimatedHeading 
+              title="Common Tax Questions"
+              />
           </div>
 
           <div className="space-y-6">

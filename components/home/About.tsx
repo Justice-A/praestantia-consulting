@@ -66,7 +66,7 @@ export default function About() {
             </motion.p>
 
             <motion.p variants={fadeInUp}>
-              Praestantia partners with businesses to put those structures in place—establishing practical financial frameworks, strengthening accountability, and aligning operations with regulatory and reporting requirements.
+              Praestantia partners with businesses to put the right structures in place—establishing practical financial frameworks, strengthening accountability, and aligning operations with regulatory and reporting requirements.
             </motion.p>
 
             <motion.p

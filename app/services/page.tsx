@@ -177,6 +177,7 @@ export default function ServicesPage() {
           />
 
           <div className="grid md:grid-cols-2 gap-8 mt-16">
+            
             <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
                 SMEs & Growing Businesses

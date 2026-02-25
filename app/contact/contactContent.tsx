@@ -6,6 +6,11 @@ import { motion, easeIn } from "framer-motion";
 import Container from "@/components/ui/Container";
 import Link from "next/link";
 
+const fadeInUp = {
+  hidden: { opacity: 0, y: 30 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
+
 const heroHeaderIn = {
   hidden: { opacity: 0, y: 20 },
   show: {
@@ -186,6 +191,13 @@ export default function ContactPage() {
             className="text-center mb-16"
            
           >
+             <motion.div
+                        className="text-center mb-12"
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true }}
+                        variants={fadeInUp}
+                      >
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
               Choose Your Preferred Contact Method
               <span className="block w-16 h-1 bg-blue-800 mx-auto mt-3"></span>
@@ -193,6 +205,7 @@ export default function ContactPage() {
             <p className="text-xl text-gray-600">
               We're available through multiple channels for your convenience
             </p>
+            </motion.div>
           </div>
           <div
             className="grid md:grid-cols-3 gap-8"
