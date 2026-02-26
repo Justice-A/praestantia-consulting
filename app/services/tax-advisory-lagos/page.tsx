@@ -15,7 +15,7 @@ export default function TaxAdvisoryPage() {
     {
       icon: Shield,
       title: "Full Compliance",
-      description: "Stay compliant with FIRS, state tax boards, and all Nigerian tax regulations",
+      description: "Stay compliant with NRS, IRS, and all Nigerian tax regulations",
     },
     {
       icon: Calculator,
@@ -49,7 +49,7 @@ export default function TaxAdvisoryPage() {
       items: [
         "Monthly VAT returns preparation and filing",
         "WHT compliance and remittance",
-        "VAT registration and deregistration",
+        "VAT registration",
         "Input VAT recovery strategies",
       ],
     },
@@ -59,15 +59,15 @@ export default function TaxAdvisoryPage() {
         "Self-assessment for individuals",
         "Tax planning for high earners",
         "PAYE compliance for employers",
-        "Tax clearance certificates",
+        "Tax clearance processing",
       ],
     },
     {
       title: "Annual Returns & Compliance",
       items: [
         "Company annual returns (CAC)",
-        "Annual tax returns (FIRS & State)",
-        "Industry-specific returns (e.g., NCC, NAICOM)",
+        "Annual tax returns (NRS & IRS)",
+        "Industry-specific returns",
         "Penalty abatement support",
       ],
     },
@@ -89,25 +89,6 @@ export default function TaxAdvisoryPage() {
     {
       title: "Foreign Companies",
       description: "Navigate Nigerian tax laws with confidence. We handle registration, filing, and compliance.",
-    },
-  ];
-
-  const faqs = [
-    {
-      question: "What's the deadline for filing VAT returns in Nigeria?",
-      answer: "VAT returns must be filed monthly by the 21st day of the following month. For example, January VAT is due by February 21st. Late filing attracts penalties of ₦50,000 for the first month and ₦25,000 for each subsequent month.",
-    },
-    {
-      question: "Can you help with back taxes and unfiled returns?",
-      answer: "Yes. We regularly help businesses catch up on unfiled returns, negotiate payment plans with tax authorities, and apply for penalty waivers where applicable. The key is to act quickly—voluntary disclosure often results in reduced penalties.",
-    },
-    {
-      question: "How much can I save with proper tax planning?",
-      answer: "Savings vary by business, but we typically identify 10-30% in tax optimization opportunities through proper expense documentation, allowable deductions, capital allowances, and strategic timing of transactions—all within legal frameworks.",
-    },
-    {
-      question: "Do you handle tax audits and disputes?",
-      answer: "Absolutely. We provide full representation during tax audits, prepare required documentation, respond to queries, and negotiate with tax authorities on your behalf. Our experience helps resolve disputes efficiently.",
     },
   ];
 
@@ -140,7 +121,6 @@ export default function TaxAdvisoryPage() {
 
           <p className="text-xl text-gray-200 mb-10 leading-relaxed">
             Strategic tax planning and filing services for businesses and individuals across Nigeria.
-            Based in Lagos, serving clients nationwide with full FIRS compliance.
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -240,29 +220,6 @@ export default function TaxAdvisoryPage() {
                 </h3>
                 <p className="text-gray-600 text-lg">
                   {item.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-gray-50 py-24">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-             <AnimatedHeading 
-              title="Common Tax Questions"
-              />
-          </div>
-
-          <div className="space-y-6">
-            {faqs.map((faq, index) => (
-              <div key={index} className="bg-white rounded-xl p-8 shadow-lg">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  {faq.question}
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  {faq.answer}
                 </p>
               </div>
             ))}

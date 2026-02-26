@@ -4,7 +4,7 @@ import Image from "next/image";
 import CTA from "@/components/home/CTA";
 import AnimatedHeading from "@/components/home/AnimatedHeading";
 export const metadata = {
-  title: "Bookkeeping & Compliance Services for Nigerian Businesses",
+  title: "Bookkeeping & Reporting Services for Nigerian Businesses",
   description: "Professional bookkeeping services for Nigerian SMEs and startups. Monthly financial reports, bank reconciliation, and compliance support. Lagos-based, serving clients nationwide.",
   keywords: "bookkeeping services Nigeria, bookkeeping Lagos, monthly financial reports, bank reconciliation Nigeria, small business accounting Lagos",
 };
@@ -14,7 +14,7 @@ export default function BookkeepingPage() {
     {
       icon: Clock,
       title: "Monthly Service",
-      description: "Regular, scheduled bookkeeping keeps your finances current and tax-ready",
+      description: "Regular, scheduled bookkeeping keeps your finances current.",
     },
     {
       icon: FileCheck,
@@ -24,7 +24,7 @@ export default function BookkeepingPage() {
     {
       icon: Calendar,
       title: "Timely Reports",
-      description: "Get financial statements by the 10th of each month for the previous month",
+      description: "Get financial statements in real-time",
     },
     {
       icon: Shield,
@@ -59,7 +59,7 @@ export default function BookkeepingPage() {
     },
     {
       title: "Growing Businesses",
-      description: "Your Excel spreadsheets can't keep up anymore. Time for professional systems.",
+      description: "Your Excel spreadsheets can't keep up anymore. Time for structured systems.",
       icon: Shield,
     },
     {
@@ -108,17 +108,6 @@ export default function BookkeepingPage() {
     },
   ];
 
-  const faqs = [
-    {
-      question: "How often do you need access to my records?",
-      answer: "Ideally, we receive bank statements, receipts, and invoices monthly. Many clients use cloud accounting software (like QuickBooks) which gives us real-time access. For others, we collect documents monthly via email or shared drive. The more current your records, the more valuable your reports.",
-    },
-    {
-      question: "Can you clean up past months if I'm behind?",
-      answer: "Absolutely. We offer catch-up bookkeeping services to bring you current. Depending on how far behind you are (3 months vs 2 years), we'll provide a fixed quote for the cleanup work before starting ongoing monthly service.",
-    },
-  ];
-
   return (
     <>
       <section className="relative py-24  overflow-hidden">
@@ -146,8 +135,7 @@ export default function BookkeepingPage() {
           </h1>
 
           <p className="text-xl text-gray-200 mb-10 leading-relaxed">
-            Monthly bookkeeping and financial reporting that keeps your business organized and tax-ready.
-            serving SMEs and startups across Nigeria with reliable bookkeeping you can count on.
+            Monthly bookkeeping and financial reporting that keeps your business organized, compliant, and financially transparent.
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -214,41 +202,15 @@ export default function BookkeepingPage() {
                   <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                     <Icon className="w-6 h-6 text-blue-900" />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">
                     {item.title}
                   </h3>
-                  <p className="text-gray-600 text-lg">
+                  <p className="text-gray-600 ">
                     {item.description}
                   </p>
                 </div>
               );
             })}
-          </div>
-        </div>
-      </section>
-
-
-
-      {/* FAQ */}
-      <section className="bg-white py-24">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-             <AnimatedHeading 
-              title="Common Questions"
-              />
-          </div>
-
-          <div className="space-y-6">
-            {faqs.map((faq, index) => (
-              <div key={index} className="bg-gray-50 rounded-xl p-8 shadow-lg">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  {faq.question}
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  {faq.answer}
-                </p>
-              </div>
-            ))}
           </div>
         </div>
       </section>

@@ -12,7 +12,7 @@ export default function Header() {
     { name: "Payroll Management", href: "/services/payroll-management-lagos" },
     { name: "Tax Advisory & Filing", href: "/services/tax-advisory-lagos" },
     { name: "Accounting System Design", href: "/services/accounting-system-setup" },
-    { name: "Bookkeeping & Compliance", href: "/services/bookkeeping-services-lagos" },
+    { name: "Bookkeeping & Reporting", href: "/services/bookkeeping-services-lagos" },
   ];
 
   return (

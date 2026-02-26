@@ -23,22 +23,17 @@ export default function PayrollManagementPage() {
       title: "Automated Processing",
       description: "Automated PAYE, Pension, and NHF calculations for accurate payroll every time",
     },
-    {
-      icon: Clock,
-      title: "Time Savings",
-      description: "Reduce payroll processing time by up to 80% with our efficient systems",
-    },
+    
     {
       icon: TrendingUp,
       title: "Scalable Solutions",
-      description: "Systems that grow with your business, from 10 to 500+ employees",
+      description: "Systems that grow with your business.",
     },
   ];
 
   const whatWeInclude = [
     "Complete payroll system design and implementation",
-    "NTA 2025 compliance audit and updates",
-    "Automated tax calculations (PAYE, Pension, NHF, ITF)",
+    "Automated tax calculations",
     "Monthly payslip generation and distribution",
     "Annual tax remittance and filing support",
     "Integration with existing accounting software",
@@ -48,7 +43,7 @@ export default function PayrollManagementPage() {
 
   const whoItsFor = [
     {
-      title: "Small Businesses (10-50 employees)",
+      title: "Small Businesses",
       description: "Get professional payroll without hiring a full-time accountant",
     },
     {
@@ -62,22 +57,7 @@ export default function PayrollManagementPage() {
     },
     {
       title: "Companies Struggling with Compliance",
-      description: "Ensure accurate PAYE, Pension, NHF, and statutory deductions while avoiding costly penalties and audit risks.",
-    },
-  ];
-
-  const faqs = [
-    {
-      question: "How long does payroll system setup take?",
-      answer: "Typical setup takes 2-4 weeks depending on company size and complexity. This includes system design, software configuration, data migration, testing, and staff training.",
-    },
-    {
-      question: "Can you handle retroactive payroll corrections?",
-      answer: "Yes. We can audit past payroll periods, identify errors, and make corrections while ensuring proper tax adjustments and compliance documentation.",
-    },
-    {
-      question: "Do I need special software?",
-      answer: "We work with your existing software or recommend solutions based on your needs and budget. We're software-agnostic and focus on what works best for your business.",
+      description: "Ensure accurate PAYE, Pension, and other statutory deductions while avoiding costly penalties and audit risks.",
     },
   ];
 
@@ -111,7 +91,7 @@ export default function PayrollManagementPage() {
         <p className="text-xl text-gray-200 mb-10 leading-relaxed">
           Professional payroll systems designed for SMEs and startups.
           Automated tax calculations, monthly payslips, and full compliance
-          with Nigerian regulations.
+          with Nigeria regulations.
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -141,7 +121,7 @@ export default function PayrollManagementPage() {
               />
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => {
               const Icon = feature.icon;
               return (
@@ -200,30 +180,6 @@ export default function PayrollManagementPage() {
                 </h3>
                 <p className="text-gray-600">
                   {item.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="bg-gray-50 py-24">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-             <AnimatedHeading 
-              title="Frequently Asked Questions"
-              />
-          </div>
-
-          <div className="space-y-6">
-            {faqs.map((faq, index) => (
-              <div key={index} className="bg-white rounded-xl p-8 shadow-lg">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  {faq.question}
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  {faq.answer}
                 </p>
               </div>
             ))}

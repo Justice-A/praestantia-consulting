@@ -21,7 +21,7 @@ export default function AccountingSystemPage() {
     {
       icon: BookOpen,
       title: "Staff Training",
-      description: "Comprehensive training so your team can confidently use the system daily",
+      description: "Comprehensive training so your team can confidently use the system",
     },
     {
       icon: Shield,
@@ -41,7 +41,11 @@ export default function AccountingSystemPage() {
     },
     {
       title: "Standard Operating Procedures",
-      description: "Written documentation of processes: how to record transactions, run reports, close months, etc.",
+      description: "Written documentation of processes.",
+    },
+     {
+      title: "Deployment & Implementation",
+      description: "Seamless setup of your accounting system, including configuration, data migration, and team onboarding to ensure smooth adoption.",
     },
     {
       title: "Staff Training",
@@ -50,21 +54,6 @@ export default function AccountingSystemPage() {
     {
       title: "Ongoing Support",
       description: "Post-implementation support to ensure smooth operation and address any questions.",
-    },
-  ];
-
-  const faqs = [
-    {
-      question: "How long does accounting system setup take?",
-      answer: "Typical timeline is 3-6 weeks from kickoff to go-live. This includes discovery (1 week), system design (1-2 weeks), software configuration (1 week), data migration (1 week), and training (1 week). Complex businesses may need more time.",
-    },
-    {
-      question: "Can you migrate data from our current system?",
-      answer: "Yes. We handle data migration from Excel, old accounting software, or even manual records. We clean and validate data during migration to ensure accuracy in the new system.",
-    },
-    {
-      question: "Do you provide ongoing support after setup?",
-      answer: "Absolutely. We offer monthly retainer packages for ongoing support, troubleshooting, and system optimization. Many clients also bring us in quarterly to review reports and ensure the system is still meeting their needs.",
     },
   ];
 
@@ -91,13 +80,12 @@ export default function AccountingSystemPage() {
         </Link>
 
         <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-          Custom <span className="text-blue-800"> Accounting Systems</span> for Nigerian Startups & SMEs Payroll Management
+          Custom <span className="text-blue-800"> Accounting Systems</span> for Nigerian Startups & SMEs 
         </h1>
 
         <p className="text-xl text-gray-200 mb-10 leading-relaxed">
           Stop fighting with spreadsheets. Get an accounting system designed 
-          for how your business actually works. Based in Lagos, serving startups 
-          and SMEs across Nigeria with tailored accounting solutions.
+          for how your business actually works.
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -154,7 +142,6 @@ export default function AccountingSystemPage() {
           <div className="text-center mb-16">
             <AnimatedHeading 
             title="Our Implementation Process"
-            subtitle="From discovery to go-live in 3-6 weeks"
             />
           </div>
 
@@ -175,29 +162,7 @@ export default function AccountingSystemPage() {
           </div>
         </div>
     </section>
-      {/* FAQ */}
-      <section className="bg-gray-50 py-24">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-             <AnimatedHeading 
-            title="Common Questions"
-            />
-          </div>
 
-          <div className="space-y-6">
-            {faqs.map((faq, index) => (
-              <div key={index} className="bg-white rounded-xl p-8 shadow-lg">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  {faq.question}
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  {faq.answer}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <CTA/>
     </>
