@@ -4,8 +4,8 @@ import Image from "next/image";
 import CTA from "@/components/home/CTA";
 import AnimatedHeading from "@/components/home/AnimatedHeading";
 export const metadata = {
-  title: "Bookkeeping & Reporting Services for Nigerian Businesses",
-  description: "Professional bookkeeping services for Nigerian SMEs and startups. Monthly financial reports, bank reconciliation, and compliance support. Lagos-based, serving clients nationwide.",
+  title:"Professional Bookkeeping</span> for Businesses",
+  description: "Bookkeeping and financial reporting that keeps your business organized, compliant, and financially transparent.",
   keywords: "bookkeeping services Nigeria, bookkeeping Lagos, monthly financial reports, bank reconciliation Nigeria, small business accounting Lagos",
 };
 
@@ -135,7 +135,7 @@ export default function BookkeepingPage() {
           </h1>
 
           <p className="text-xl text-gray-200 mb-10 leading-relaxed">
-            Monthly bookkeeping and financial reporting that keeps your business organized, compliant, and financially transparent.
+            Bookkeeping and financial reporting that keeps your business organized, compliant, and financially transparent.
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4">

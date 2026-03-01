@@ -5,8 +5,8 @@ import Hero from "@/app/Hero";
 import CTA from "@/components/home/CTA";
 import AnimatedHeading from "@/components/home/AnimatedHeading";
 export const metadata = {
-  title: "Tax Advisory & Filing Services in Nigeria | VAT, Income Tax, Annual Returns",
-  description: "Expert tax planning and filing for Nigerian businesses. VAT returns, corporate tax, personal income tax, and annual returns. Lagos-based, serving clients nationwide.",
+  title: "Expert Tax Advisory & Filing for Businesses",
+  description: "Strategic tax planning and filing services for businesses and individuals across Nigeria.",
   keywords: "tax advisory Nigeria, tax filing Lagos, VAT returns Nigeria, income tax filing, corporate tax Nigeria, tax consultant Lagos",
 };
 

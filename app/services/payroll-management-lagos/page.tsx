@@ -6,8 +6,8 @@ import CTA from "@/components/home/CTA";
 import AnimatedHeading from "@/components/home/AnimatedHeading";
 
 export const metadata = {
-  title: "Payroll Management Services in Lagos | NTA 2025 Compliant",
-  description: "Professional payroll services for Lagos SMEs. NTA 2025 compliant systems, automated tax calculations, and monthly payslip generation. ICAN certified accountant.",
+  title: " NTA 2025 Compliant Payroll Management for Businesses",
+  description: "Professional payroll systems designed for SMEs and startups. Automated tax calculations, monthly payslips, and full compliance with Nigeria regulations.",
   keywords: "payroll management Lagos, payroll services Nigeria, NTA 2025 compliance, payroll software Lagos, SME payroll",
 };
 

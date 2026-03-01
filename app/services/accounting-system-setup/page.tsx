@@ -6,8 +6,8 @@ import CTA from "@/components/home/CTA"
 import AnimatedHeading from "@/components/home/AnimatedHeading";
 
 export const metadata = {
-  title: "Accounting System Design & Setup for Nigerian Startups & SMEs",
-  description: "Custom accounting systems for Nigerian businesses. Chart of accounts design, software setup, and staff training. Lagos-based, serving clients nationwide.",
+  title: "Custom Accounting Systems for Nigerian Startups & SMEs ",
+  description: "Stop fighting with spreadsheets. Get an accounting system designed for how your business actually works.",
   keywords: "accounting system design Nigeria, chart of accounts Lagos, accounting software setup, QuickBooks Nigeria, accounting for startups Nigeria",
 };
 
